@@ -1,0 +1,1291 @@
+*{
+    padding:0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+}
+.grid >* {
+    border: 2px solid black;
+}
+.nosotroslogo img{
+    width: 80px;
+}
+.gheader{
+    grid-area: gheader;
+    background-color: rgb(23, 7, 7);
+    display: flex;
+    display: grid;
+    border: 2px solid white;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+}
+.nosotroslogo{
+    place-self: center;
+}
+.titulopag3{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    font-style: italic;
+}
+.menunosotros .nos1{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 2;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.menunosotros a{
+    text-decoration: none;
+    color: white;
+}
+.nos1:hover{
+    background-color: brown;
+}
+.gheader ul{
+    display: flex;
+    color: white;
+    place-content: center;
+}
+.gridmain{
+    grid-area: gridmain;
+    background-image: url(/assets/fondopagina.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+.caja0{
+    background-color: rgba(128, 128, 128, 0);
+    text-align: center;
+    color: white;
+}
+.articulo1{
+    background-color: rgba(193, 190, 190, 0.503);
+    border: 2px solid rgb(24, 116, 107);
+    text-align: center;
+    color: white;
+}
+.articulo2{
+    background-color: rgba(193, 190, 190, 0.503);
+    border: 2px solid rgb(24, 116, 107);
+    text-align: center;
+    color: white;
+}
+.articulo3{
+    background-color: rgba(193, 190, 190, 0.503);
+    border: 2px solid rgb(24, 116, 107);
+    text-align: center;
+    color: white;
+}
+.articulo4{
+    background-color: rgba(193, 190, 190, 0.503);
+    border: 2px solid rgb(24, 116, 107);
+    text-align: center;
+    color: white;
+}
+.articulo5{
+    background-color: rgba(193, 190, 190, 0.503);
+    border: 2px solid rgb(24, 116, 107);
+    text-align: center;
+    color: white;
+}
+.gridfooter{
+    grid-area: gridfooter;
+    background-color: rgb(23, 7, 7);
+    display: grid;
+    color: white;
+    border: 2px solid white;
+}
+.titulofooternos{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    font-style: italic;
+}
+.logofooter{
+    height: 40px;
+    place-self: center;
+}
+.direccion{
+    text-decoration: none;
+    color: white;
+}
+.infonos{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menunosotrosfooter .nos12{
+    display: inline-block;
+    line-height: 2;
+    text-transform: uppercase;
+    padding: 8px 12px;
+}
+.menunosotrosfooter .menuu{
+    display: flex;
+    justify-content: center;
+}
+.noso{
+    color: white;
+}
+.siguenos{
+    display: flex;
+    justify-content: center;
+}
+.espacios{
+    padding-top: 10px;
+    text-align: center;
+}
+.derechonoso{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+@media (max-width: 767px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader"
+        "gridmain"
+        "gridfooter";
+        grid-template-rows: 120px auto auto;
+    }
+    .menunosotros a{
+        font-size: 15px;
+    }
+    .gridmain{
+        background-image: url(/assets/fondopagina.jpg);
+        background-size: cover;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader"
+        "gridmain"
+        "gridfooter";
+        grid-template-rows: 120px auto auto;
+    }
+    .gheader{
+        grid-area: gheader;
+}
+.gridmain{
+    grid-area: gridmain;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+}
+.caja0 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.gridfooter{
+    grid-area: gridfooter;
+}
+}
+@media screen and (min-width: 1024px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader"
+        "gridmain"
+        "gridfooter";
+        grid-template-rows: 120px auto auto;
+    }
+    .gheader{
+        display: flex;
+        justify-content: space-between;
+    }
+    .titulopag3{
+        position: absolute;
+        padding-top: 30px;
+        left: 80px;
+        font-size: 40px;
+        font-family: 'Cormorant SC', serif;
+        font-style: italic;
+    }
+    .nos0{
+        display: flex;
+        right: 100px;
+        padding-top: 35px;
+    }
+    .gridmain{
+        grid-area: gridmain;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+    .caja0 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .articulo1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .gridfooter{
+        position: relative;
+    }
+    .titulofooternos{
+        display: flex;
+        justify-content: left;
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    .logofooter{
+        position: absolute;
+        left: 110px;
+        top: 30px;
+        height: 80px;
+        width: 80px;
+        padding-top: 10px;
+    }
+    .siguenos{
+        position: absolute;
+        right: 0;
+        padding-right: 80px;
+        top: 10px;
+    }
+    .espacios{
+        position: absolute;
+        right: 0;
+        top: 30px;
+        padding-right: 10px;
+    }
+    .menunosotrosfooter{
+        margin-bottom: -15px;
+    }
+}
+/*page index*/
+.grid1{
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+}
+.grid1 >* {
+    border: 2px solid black;
+}
+.nosotroslogo1 img{
+    width: 80px;
+}
+.gheader1{
+    grid-area: gheader1;
+    background-color: rgb(23, 7, 7);
+    display: grid;
+    border: 2px solid white;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+}
+.nosotroslogo1{
+    place-self: center;
+}
+.titulopag1{
+    display: grid;
+    text-align: center;
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    font-style: italic;
+}
+.menunosotros1 ul{
+    display: inline-block;
+}
+.nos01 .nosindex{
+    font-size: 18px;
+    line-height: 2;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+.menunosotros1 a{
+    text-decoration: none;
+    color: white;
+}
+.nosindex:hover{
+    background-color: brown;
+}
+.gheader1 ul{
+    display: flex;
+    color: white;
+    place-content: center;
+}
+.gridmain1{
+    grid-area: gridmain1;
+    background-image: url(/assets/fondopagina.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+    color: white;
+}
+.tituloindex{
+    display: flex;
+    justify-content: center;
+}
+.container-all1{
+    background-color: rgba(193, 190, 190, 0.503);
+    border: 2px solid rgb(24, 116, 107);
+    display: grid;
+    padding-top: 10px;
+}
+.container-all1 img{
+    height: 150px;
+    width: 200px;
+    place-self: center;
+}
+.parrafo1{
+    text-align: center;
+    padding: 10px;
+}
+.container-all2{
+    background-color: rgba(193, 190, 190, 0.503);
+    border: 2px solid rgb(24, 116, 107);
+    display: grid;
+    padding-top: 10px;
+}
+.container-all2 img{
+    height: 150px;
+    width: 200px;
+    place-self: center;
+}
+.parrafo2{
+    text-align: center;
+    padding: 10px;
+}
+.container-all3 img{
+    height: 50px;
+    width: 50px;
+}
+.parrafo3{
+    text-align: center;
+    padding: 10px;
+}
+.gridfooter1{
+    grid-area: gridfooter1;
+    background-color: rgb(23, 7, 7);
+    display: grid;
+    color: white;
+    border: 2px solid white;
+}
+.titulofooternos1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    font-style: italic;
+}
+.logofooter1{
+    height: 40px;
+    place-self: center;
+}
+.direccion1{
+    text-decoration: none;
+    color: white;
+}
+.infonos1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menunosotrosfooter1 .index1{
+    display: inline-block;
+    line-height: 2;
+    text-transform: uppercase;
+    padding: 8px 12px;
+}
+.menunosotrosfooter1 .menuu1{
+    display: flex;
+    justify-content: center;
+}
+.nus{
+    color: white;
+}
+.siguenos1{
+    display: flex;
+    justify-content: center;
+}
+.espacios1{
+    padding-top: 10px;
+    text-align: center;
+}
+.derechos{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+@media (max-width: 767px){
+    .grid1{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader1"
+        "gridmain1"
+        "gridfooter1";
+        grid-template-rows: 120px auto auto;
+    }
+    .menunosotros1 a{
+        font-size: 15px;
+    }
+    .gridmain1{
+        background-image: url(/assets/fondopagina.jpg);
+        background-size: cover;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .grid1{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader1"
+        "gridmain1"
+        "gridfooter1";
+        grid-template-rows: 120px auto auto;
+    }
+    .gheader1{
+        grid-area: gheader1;
+}
+.gridmain1{
+    grid-area: gridmain1;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+.gridfooter1{
+    grid-area: gridfooter1;
+}
+}
+@media screen and (min-width: 1024px){
+    .grid1{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader1"
+        "gridmain1"
+        "gridfooter1";
+        grid-template-rows: 120px auto auto;
+    }
+    .gheader1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .titulopag1{
+        position: absolute;
+        padding-top: 30px;
+        left: 80px;
+        font-size: 40px;
+        font-family: 'Cormorant SC', serif;
+        font-style: italic;
+    }
+    .nos01{
+        display: flex;
+        right: 100px;
+        padding-top: 35px;
+    }
+    .gridmain1{
+        grid-area: gridmain1;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+    .container-all1{
+        display:flex;
+    }
+    .container-all1 img{
+        padding-left: 10px;
+    }
+    .container-all2{
+        display: flex;
+    }
+    .container-all2 img{
+        padding-left: 10px;
+    }
+    .container-all3{
+        display: flex;
+    }
+    .gridfooter1{
+        position: relative;
+    }
+    .titulofooternos1{
+        display: flex;
+        justify-content: left;
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    .logofooter1{
+        position: absolute;
+        left: 110px;
+        top: 30px;
+        height: 80px;
+        width: 80px;
+        padding-top: 10px;
+    }
+    .siguenos1{
+        position: absolute;
+        right: 0;
+        padding-right: 80px;
+        top: 10px;
+    }
+    .espacios1{
+        position: absolute;
+        right: 0;
+        top: 30px;
+        padding-right: 10px;
+    }
+    .menunosotrosfooter1{
+        margin-bottom: -15px;
+    }
+}
+/* page servicios */
+.grid2{
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+}
+.grid2 >* {
+    border: 2px solid black;
+}
+.nosotroslogo2 img{
+    width: 80px;
+}
+.logofooter2{
+    height: 40px;
+    place-self: center;
+}
+.gheader2{
+    grid-area: gheader2;
+    background-color: rgb(23, 7, 7);
+    display: grid;
+    border: 2px solid white;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+}
+.nosotroslogo2{
+    place-self: center;
+}
+.titulopag2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    font-style: italic;
+}
+.menunosotros2 .servi1{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 2;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.menunosotros2 a{
+    text-decoration: none;
+    color: white;
+}
+.servi1:hover{
+    background-color: brown;
+}
+.gheader2 ul{
+    display: flex;
+    color: white;
+    place-content: center;
+}
+.gridmain2{
+    grid-area: gridmain2;
+    background-image: url(/assets/fondopagina.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+    color: white;
+}
+.tituloservi{
+    display: flex;
+    justify-content: center;
+}
+.titulo2servi{
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+.parrafoservi{
+    padding: 10px;
+}
+.articulo1servi{
+    background-color: rgb(33, 5, 5);
+    border: 2px solid rgb(215, 125, 15);
+    text-align: center;
+}
+.articulo2servi{
+    background-color: rgb(33, 5, 5);
+    border: 2px solid rgb(215, 125, 15);
+    text-align: center;
+}
+.articulo3servi{
+    background-color: rgb(33, 5, 5);
+    border: 2px solid rgb(215, 125, 15);
+    text-align: center;
+}
+.gridfooter2{
+    grid-area: gridfooter2;
+    background-color: rgb(23, 7, 7);
+    display: grid;
+    color: white;
+    border: 2px solid white;
+}
+.titulofooter2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    font-style: italic;
+}
+.logofooter2{
+    height: 40px;
+    place-self: center;
+}
+.direccion2{
+    text-decoration: none;
+    color: white;
+}
+.infoservi{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menuservifooter .servi2{
+    display: inline-block;
+    line-height: 2;
+    text-transform: uppercase;
+    padding: 8px 12px;
+}
+.menuservifooter .menuu2{
+    display: flex;
+    justify-content: center;
+}
+.servi22{
+    color: white;
+}
+.siguenos2{
+    display: flex;
+    justify-content: center;
+}
+.espacios2{
+    padding-top: 10px;
+    text-align: center;
+}
+.derechos2{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+@media (max-width: 767px){
+    .grid2{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader2"
+        "gridmain2"
+        "gridfooter2";
+        grid-template-rows: 120px auto auto;
+    }
+    .menunosotros2 a{
+        font-size: 15px;
+    }
+    .gridmain2{
+        background-image: url(/assets/fondopagina.jpg);
+        background-size: cover;
+    }
+    .menuu2{
+        margin-bottom: -15px;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .grid2{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader2"
+        "gridmain2"
+        "gridfooter2";
+        grid-template-rows: 120px auto auto;
+    }
+    .gheader2{
+        grid-area: gheader2;
+}
+.gridmain2{
+    grid-area: gridmain2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+}
+.tituloservi{
+    grid-column: 1/3;
+}
+.articulo1servi{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.gridfooter2{
+    grid-area: gridfooter2;
+}
+}
+@media screen and (min-width: 1024px){
+    .grid2{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader2"
+        "gridmain2"
+        "gridfooter2";
+        grid-template-rows: 120px auto auto;
+    }
+    .gheader2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .titulopag2{
+        position: absolute;
+        padding-top: 30px;
+        left: 80px;
+        font-size: 40px;
+        font-family: 'Cormorant SC', serif;
+        font-style: italic;
+    }
+    .nos00{
+        display: flex;
+        right: 100px;
+        padding-top: 35px;
+    }
+    .gridmain2{
+        grid-area: gridmain2;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+    .gridfooter2{
+        position: relative;
+    }
+    .titulofooter2{
+        display: flex;
+        justify-content: left;
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    .logofooter2{
+        position: absolute;
+        left: 110px;
+        top: 30px;
+        height: 80px;
+        width: 80px;
+        padding-top: 10px;
+    }
+    .siguenos2{
+        position: absolute;
+        right: 0;
+        padding-right: 80px;
+        top: 10px;
+    }
+    .espacios2{
+        position: absolute;
+        right: 0;
+        top: 30px;
+        padding-right: 10px;
+    }
+    .menuservifooter{
+        margin-bottom: -15px;
+    }
+    .tituloservi{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+}
+/* page clientes */
+.grid4{
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+}
+.grid4 >* {
+    border: 2px solid black;
+}
+.nosotroslogo4 img{
+    width: 80px;
+}
+.gheader4{
+    grid-area: gheader4;
+    background-color: rgb(23, 7, 7);
+    display: flex;
+    display: grid;
+    border: 2px solid white;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+}
+.nosotroslogo4{
+    place-self: center;
+}
+.titulopag4{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    font-style: italic;
+}
+.menunosotros4 .nos4{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 2;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.menunosotros4 a{
+    text-decoration: none;
+    color: white;
+}
+.nos4:hover{
+    background-color: brown;
+}
+.gheader4 ul{
+    display: flex;
+    color: white;
+    place-content: center;
+}
+.gridclientes{
+    grid-area: gridclientes;
+    background-image: url(/assets/fondopagina.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+    color: white;
+}
+.tituloclientes{
+    display: flex;
+    justify-content: center;
+}
+.parrafocliente{
+    padding: 10px;
+}
+.nombrecliente{
+    padding: 10px;
+}
+.clien1{
+    background-color: rgb(33, 5, 5);
+    border: 2px solid rgb(215, 125, 15);
+    text-align: center;
+}
+.clien2{
+    background-color: rgb(33, 5, 5);
+    border: 2px solid rgb(215, 125, 15);
+    text-align: center;
+}
+.clien3{
+    background-color: rgb(33, 5, 5);
+    border: 2px solid rgb(215, 125, 15);
+    text-align: center;
+}
+.parra1{
+    padding: 10px;
+}
+.clientesfooter{
+    grid-area: clientesfooter;
+    background-color: rgb(23, 7, 7);
+    display: grid;
+    color: white;
+    border: 2px solid white;
+}
+.titulofooterclien{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    font-style: italic;
+}
+.logofooter4{
+    height: 40px;
+    place-self: center;
+}
+.direccion4{
+    text-decoration: none;
+    color: white;
+}
+.infoclien{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menuclientesfooter .clien4{
+    display: inline-block;
+    line-height: 2;
+    text-transform: uppercase;
+    padding: 8px 12px;
+}
+.menuclientesfooter .menuu4{
+    display: flex;
+    justify-content: center;
+}
+.noso4{
+    color: white;
+}
+.siguenos4{
+    display: flex;
+    justify-content: center;
+}
+.espacios4{
+    padding-top: 10px;
+    text-align: center;
+}
+.derechos4{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+@media (max-width: 767px){
+    .grid4{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader4"
+        "gridclientes"
+        "clientesfooter";
+        grid-template-rows: 120px auto auto;
+    }
+    .menunosotros4 a{
+        font-size: 15px;
+    }
+    .gridclientes{
+        background-image: url(/assets/fondopagina.jpg);
+        background-size: cover;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .grid4{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader4"
+        "gridclientes"
+        "clientesfooter";
+        grid-template-rows: 120px auto auto;
+    }
+    .gheader{
+        grid-area: gheader;
+}
+.gridclientes{
+    grid-area: gridclientes;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+.clien0 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.clien3{
+    grid-column: 1/3;
+}
+.clientesfooter{
+    grid-area: clientesfooter;
+}
+}
+@media screen and (min-width: 1024px){
+    .grid4{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader4"
+        "gridclientes"
+        "clientesfooter";
+        grid-template-rows: 120px auto auto;
+    }
+    .gheader4{
+        display: flex;
+        justify-content: space-between;
+    }
+    .titulopag4{
+        position: absolute;
+        padding-top: 30px;
+        left: 80px;
+        font-size: 40px;
+        font-family: 'Cormorant SC', serif;
+        font-style: italic;
+    }
+    .clientes{
+        display: flex;
+        right: 100px;
+        padding-top: 35px;
+    }
+    .gridclientes{
+        grid-area: gridclientes;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+    .clien0 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .clientesfooter{
+        position: relative;
+    }
+    .titulofooterclien{
+        display: flex;
+        justify-content: left;
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    .logofooter4{
+        position: absolute;
+        left: 110px;
+        top: 30px;
+        height: 80px;
+        width: 80px;
+        padding-top: 10px;
+    }
+    .siguenos4{
+        position: absolute;
+        right: 0;
+        padding-right: 80px;
+        top: 10px;
+    }
+    .espacios4{
+        position: absolute;
+        right: 0;
+        top: 30px;
+        padding-right: 10px;
+    }
+    .menuclientesfooter{
+        margin-bottom: -15px;
+    }
+}
+/* page contacto */ 
+.grid5{
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+}
+.grid5 >* {
+    border: 2px solid black;
+}
+.nosotroslogo5 img{
+    width: 80px;
+}
+.gheader5{
+    grid-area: gheader5;
+    background-color: rgb(23, 7, 7);
+    display: flex;
+    display: grid;
+    border: 2px solid white;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+}
+.nosotroslogo5{
+    place-self: center;
+}
+.titulopag5{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    font-style: italic;
+}
+.menucontacto .con1{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 2;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.menucontacto a{
+    text-decoration: none;
+    color: white;
+}
+.con1:hover{
+    background-color: brown;
+}
+.gheader5 ul{
+    display: flex;
+    color: white;
+    place-content: center;
+}
+.maincontacto{
+    grid-area: maincontacto;
+    background-image: url(/assets/fondopagina.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+    color: white;
+}
+.titulocontacto{
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    place-self: center;
+}
+.titulomapa{
+    display: flex;
+    justify-content: center;
+}
+.mapa{
+    display: grid;
+    place-self: center;
+    height: 280px;
+    width: 380px;
+}
+.contactofooter{
+    grid-area: contactofooter;
+    background-color: rgb(23, 7, 7);
+    display: grid;
+    color: white;
+    border: 2px solid white;
+}
+.titulofootercon{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    font-style: italic;
+}
+.logofootercon{
+    height: 40px;
+    place-self: center;
+}
+.direccion5{
+    text-decoration: none;
+    color: white;
+}
+.infocon{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menucontactofooter .con12{
+    display: inline-block;
+    line-height: 2;
+    text-transform: uppercase;
+    padding: 8px 12px;
+}
+.menucontactofooter .menuu5{
+    display: flex;
+    justify-content: center;
+}
+.con123{
+    color: white;
+}
+.siguenos5{
+    display: flex;
+    justify-content: center;
+}
+.espacios5{
+    padding-top: 10px;
+    text-align: center;
+}
+.derechos5{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+@media (max-width: 767px){
+    .grid5{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader5"
+        "maincontacto"
+        "contactofooter";
+        grid-template-rows: 120px auto auto;
+    }
+    .menucontacto a{
+        font-size: 15px;
+    }
+    .maincontacto{
+        background-image: url(/assets/fondopagina.jpg);
+        background-size: cover;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .grid5{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader5"
+        "maincontacto"
+        "contactofooter";
+        grid-template-rows: 120px auto auto;
+    }
+    .gheader5{
+        grid-area: gheader5;
+}
+.maincontacto{
+    grid-area: maincontacto;
+}
+.contactofooter{
+    grid-area: contactofooter;
+}
+}
+@media screen and (min-width: 1024px){
+    .grid5{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gheader5"
+        "maincontacto"
+        "contactofooter";
+        grid-template-rows: 120px auto auto;
+    }
+    .gheader5{
+        display: flex;
+        justify-content: space-between;
+    }
+    .titulopag5{
+        position: absolute;
+        padding-top: 30px;
+        left: 80px;
+        font-size: 40px;
+        font-family: 'Cormorant SC', serif;
+        font-style: italic;
+    }
+    .con0{
+        display: flex;
+        right: 100px;
+        padding-top: 35px;
+    }
+    .maincontacto{
+        grid-area: maincontacto;
+    }
+    .contactofooter{
+        position: relative;
+    }
+    .titulofootercon{
+        display: flex;
+        justify-content: left;
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    .logofootercon{
+        position: absolute;
+        left: 110px;
+        top: 30px;
+        height: 80px;
+        width: 80px;
+        padding-top: 10px;
+    }
+    .siguenos5{
+        position: absolute;
+        right: 0;
+        padding-right: 80px;
+        top: 10px;
+    }
+    .espacios5{
+        position: absolute;
+        right: 0;
+        top: 30px;
+        padding-right: 10px;
+    }
+    .menucontactofooter{
+        margin-bottom: -15px;
+    }
+}
