@@ -166,7 +166,7 @@
         font-size: 15px;
     }
     .gridmain{
-        background-image: url(/assets/fondopagina.jpg);
+        background-image: url(../assets/fondopagina.jpg);
         background-size: cover;
     }
 }
@@ -322,7 +322,7 @@
 }
 .gridmain1{
     grid-area: gridmain1;
-    background-image: url(/assets/fondopagina.jpg);
+    background-image: url(../assets/fondopagina.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: grid;
@@ -438,7 +438,7 @@
         font-size: 15px;
     }
     .gridmain1{
-        background-image: url(/assets/fondopagina.jpg);
+        background-image: url(../assets/fondopagina.jpg);
         background-size: cover;
     }
 }
@@ -599,7 +599,7 @@
 }
 .gridmain2{
     grid-area: gridmain2;
-    background-image: url(/assets/fondopagina.jpg);
+    background-image: url(../assets/fondopagina.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: grid;
@@ -699,7 +699,7 @@
         font-size: 15px;
     }
     .gridmain2{
-        background-image: url(/assets/fondopagina.jpg);
+        background-image: url(../assets/fondopagina.jpg);
         background-size: cover;
     }
     .menuu2{
@@ -856,7 +856,7 @@
 }
 .gridclientes{
     grid-area: gridclientes;
-    background-image: url(/assets/fondopagina.jpg);
+    background-image: url(../assets/fondopagina.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: grid;
@@ -958,7 +958,7 @@
         font-size: 15px;
     }
     .gridclientes{
-        background-image: url(/assets/fondopagina.jpg);
+        background-image: url(../assets/fondopagina.jpg);
         background-size: cover;
     }
 }
@@ -1113,7 +1113,7 @@
 }
 .maincontacto{
     grid-area: maincontacto;
-    background-image: url(/assets/fondopagina.jpg);
+    background-image: url(../assets/fondopagina.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: grid;
@@ -1204,7 +1204,7 @@
         font-size: 15px;
     }
     .maincontacto{
-        background-image: url(/assets/fondopagina.jpg);
+        background-image: url(../assets/fondopagina.jpg);
         background-size: cover;
     }
 }
