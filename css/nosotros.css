@@ -58,7 +58,7 @@
 }
 .gridmain{
     grid-area: gridmain;
-    background-image: url(/assets/fondopagina.jpg);
+    background-image: url(../assets/fondopagina.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: grid;
