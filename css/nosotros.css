@@ -71,6 +71,26 @@
     text-align: center;
     color: white;
 }
+.titulo22{
+    text-decoration: underline;
+    font-size: 40px;padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.nosotrostexto{
+    padding-bottom: 10px;
+}
+.nuestroequipo{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.nombres{
+    text-transform: uppercase;
+}
+.especialidad{
+    text-transform: capitalize;
+    font-style: italic;
+}
 .articulo1{
     background-color: rgba(193, 190, 190, 0.503);
     border: 2px solid rgb(24, 116, 107);
@@ -126,6 +146,7 @@
 .infonos{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
 }
 .menunosotrosfooter .nos12{
     display: inline-block;
@@ -334,6 +355,9 @@
 .tituloindex{
     display: flex;
     justify-content: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 .container-all1{
     background-color: rgba(193, 190, 190, 0.503);
@@ -398,6 +422,7 @@
 .infonos1{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
 }
 .menunosotrosfooter1 .index1{
     display: inline-block;
@@ -611,10 +636,15 @@
 .tituloservi{
     display: flex;
     justify-content: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 .titulo2servi{
     padding-top: 10px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-style: italic;
 }
 .parrafoservi{
     padding: 10px;
@@ -659,6 +689,7 @@
 .infoservi{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
 }
 .menuservifooter .servi2{
     display: inline-block;
@@ -868,12 +899,17 @@
 .tituloclientes{
     display: flex;
     justify-content: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 .parrafocliente{
     padding: 10px;
 }
 .nombrecliente{
     padding: 10px;
+    font-style: italic;
+    text-transform: uppercase;
 }
 .clien1{
     background-color: rgb(33, 5, 5);
@@ -918,6 +954,7 @@
 .infoclien{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
 }
 .menuclientesfooter .clien4{
     display: inline-block;
@@ -1125,13 +1162,20 @@
 .titulocontacto{
     display: flex;
     justify-content: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 .formulario{
     place-self: center;
+    text-transform: uppercase;
 }
 .titulomapa{
     display: flex;
     justify-content: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 .mapa{
     display: grid;
@@ -1164,6 +1208,7 @@
 .infocon{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
 }
 .menucontactofooter .con12{
     display: inline-block;
