@@ -16,6 +16,9 @@
 .nosotroslogo img{
     width: 80px;
 }
+.nosotroslogo:hover{
+    transform: skewY(10deg);
+}
 .gheader{
     grid-area: gheader;
     background-color: rgb(23, 7, 7);
@@ -50,6 +53,7 @@
 }
 .nos1:hover{
     background-color: brown;
+    transform: scale(1.2);
 }
 .gheader ul{
     display: flex;
@@ -97,30 +101,55 @@
     border: 2px solid rgb(24, 116, 107);
     text-align: center;
     color: white;
+    transition-duration: 2s;
+}
+.articulo1:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
 }
 .articulo2{
     background-color: rgba(193, 190, 190, 0.503);
     border: 2px solid rgb(24, 116, 107);
     text-align: center;
     color: white;
+    transition-duration: 2s;
+}
+.articulo2:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
 }
 .articulo3{
     background-color: rgba(193, 190, 190, 0.503);
     border: 2px solid rgb(24, 116, 107);
     text-align: center;
     color: white;
+    transition-duration: 2s;
+}
+.articulo3:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
 }
 .articulo4{
     background-color: rgba(193, 190, 190, 0.503);
     border: 2px solid rgb(24, 116, 107);
     text-align: center;
     color: white;
+    transition-duration: 2s;
+}
+.articulo4:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
 }
 .articulo5{
     background-color: rgba(193, 190, 190, 0.503);
     border: 2px solid rgb(24, 116, 107);
     text-align: center;
     color: white;
+    transition-duration: 2s;
+}
+.articulo5:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
 }
 .gridfooter{
     grid-area: gridfooter;
@@ -301,6 +330,9 @@
 .nosotroslogo1 img{
     width: 80px;
 }
+.nosotroslogo1:hover{
+    transform: skewY(10deg);
+}
 .gheader1{
     grid-area: gheader1;
     background-color: rgb(23, 7, 7);
@@ -336,6 +368,7 @@
 }
 .nosindex:hover{
     background-color: brown;
+    transform: scale(1.2);
 }
 .gheader1 ul{
     display: flex;
@@ -365,6 +398,12 @@
     border: 2px solid rgb(24, 116, 107);
     display: grid;
     padding-top: 10px;
+    transform: rotateY(30deg);
+    transition-duration: 2s;
+}
+.container-all1:hover{
+    transform: scale(1);
+    border-radius: 20px;
 }
 .container-all1 img{
     height: 150px;
@@ -596,6 +635,9 @@
 .nosotroslogo2{
     place-self: center;
 }
+.nosotroslogo2:hover{
+    transform: skewY(10deg);
+}
 .titulopag2{
     display: flex;
     justify-content: center;
@@ -617,6 +659,7 @@
 }
 .servi1:hover{
     background-color: brown;
+    transform: scale(1.2);
 }
 .gheader2 ul{
     display: flex;
@@ -654,16 +697,28 @@
     background-color: rgb(33, 5, 5);
     border: 2px solid rgb(215, 125, 15);
     text-align: center;
+    transition-duration: 2s;
+}
+.articulo1servi:hover{
+    transform: scale(1.1);
 }
 .articulo2servi{
     background-color: rgb(33, 5, 5);
     border: 2px solid rgb(215, 125, 15);
     text-align: center;
+    transition-duration: 2s;
+}
+.articulo2servi:hover{
+    transform: scale(1.1);
 }
 .articulo3servi{
     background-color: rgb(33, 5, 5);
     border: 2px solid rgb(215, 125, 15);
     text-align: center;
+    transition-duration: 2s;
+}
+.articulo3servi:hover{
+    transform: scale(1.1);
 }
 .gridfooter2{
     grid-area: gridfooter2;
@@ -859,6 +914,9 @@
 .nosotroslogo4{
     place-self: center;
 }
+.nosotroslogo4:hover{
+    transform: skewY(10deg);
+}
 .titulopag4{
     display: flex;
     justify-content: center;
@@ -880,6 +938,7 @@
 }
 .nos4:hover{
     background-color: brown;
+    transform: scale(1.2);
 }
 .gheader4 ul{
     display: flex;
@@ -916,16 +975,19 @@
     background-color: rgb(33, 5, 5);
     border: 2px solid rgb(215, 125, 15);
     text-align: center;
+    transform: skewX(10deg);
 }
 .clien2{
     background-color: rgb(33, 5, 5);
     border: 2px solid rgb(215, 125, 15);
     text-align: center;
+    transform: skewX(10deg);
 }
 .clien3{
     background-color: rgb(33, 5, 5);
     border: 2px solid rgb(215, 125, 15);
     text-align: center;
+    transform: skewX(10deg);
 }
 .parra1{
     padding: 10px;
@@ -1122,6 +1184,9 @@
 .nosotroslogo5{
     place-self: center;
 }
+.nosotroslogo5{
+    transform: skewY(10deg);
+}
 .titulopag5{
     display: flex;
     justify-content: center;
@@ -1143,6 +1208,7 @@
 }
 .con1:hover{
     background-color: brown;
+    transform: scale(1.2);
 }
 .gheader5 ul{
     display: flex;
@@ -1165,11 +1231,39 @@
     justify-content: center;
     font-size: 50px;
     text-transform: uppercase;
-    text-decoration: underline;
+    text-decoration: underline;    
+    font-family: cursive;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+    opacity: 1;
+    }
 }
 .formulario{
     place-self: center;
     text-transform: uppercase;
+}
+input{
+    transition: all 2s;
+}
+input:focus{
+    font-size: 50px;
+    border: 4px solid cornflowerblue
+    color red;
+}
+input::placeholder{
+    color: black;
+    font-weight: 900;
+    text-align: center;
+    font-style: italic;
 }
 .titulomapa{
     display: flex;
@@ -1177,12 +1271,21 @@
     font-size: 30px;
     text-transform: uppercase;
     text-decoration: underline;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 .mapa{
     display: grid;
     place-self: center;
     height: 280px;
     width: 380px;
+}
+.mapa:hover{
+    transform: scale(1.1);
+    transition: all 2s;
 }
 .contactofooter{
     grid-area: contactofooter;
