@@ -419,6 +419,12 @@
     border: 2px solid rgb(24, 116, 107);
     display: grid;
     padding-top: 10px;
+    transform: rotateY(30deg);
+    transition-duration: 2s;
+}
+.container-all2:hover{
+    transform: scale(1);
+    border-radius: 20px;
 }
 .container-all2 img{
     height: 150px;
@@ -429,13 +435,43 @@
     text-align: center;
     padding: 10px;
 }
+.container-all3{
+    background-color: rgba(193, 190, 190, 0.503);
+    border: 2px solid rgb(24, 116, 107);
+    display: grid;
+    padding-top: 10px;
+    transform: rotateY(30deg);
+    transition-duration: 2s;
+}
+.container-all3:hover{
+    transform: scale(1);
+    border-radius: 20px;
+}
 .container-all3 img{
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 200px;
+    padding-left: 10px;
+    place-self: center;
 }
 .parrafo3{
     text-align: center;
     padding: 10px;
+}
+.container-all4{
+    background-color: rgba(193, 190, 190, 0.503);
+    border: 2px solid rgb(24, 116, 107);
+    display: grid;
+    padding-top: 10px;
+    transform: rotateY(30deg);
+    transition-duration: 2s;
+}
+.container-all4:hover{
+    transform: scale(1);
+    border-radius: 20px;
+}
+.acerca{
+    display: flex;
+    justify-content: center;
 }
 .gridfooter1{
     grid-area: gridfooter1;
@@ -521,8 +557,29 @@
 }
 .gridmain1{
     grid-area: gridmain1;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+}
+.tituloindex{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.container-all1{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.container-all2{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.container-all3{
+    grid-column:1/4;
+}
+.container-all3 img{
+    place-self: center;
+}
+.container-all4{
+    grid-column: 1/4;
 }
 .gridfooter1{
     grid-area: gridfooter1;
@@ -556,23 +613,28 @@
     }
     .gridmain1{
         grid-area: gridmain1;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 40px 1fr 1fr;
+    }
+    .tituloindex{
+        grid-column: 1/5;
+        grid-row: 1/2;
     }
     .container-all1{
-        display:flex;
-    }
-    .container-all1 img{
-        padding-left: 10px;
+        grid-column: 1/3;
+        grid-row: 2/3;
     }
     .container-all2{
-        display: flex;
-    }
-    .container-all2 img{
-        padding-left: 10px;
+        grid-column: 3/5;
+        grid-row: 2/3;
     }
     .container-all3{
-        display: flex;
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .container-all4{
+        grid-column: 3/5;
+        grid-row: 3/4;
     }
     .gridfooter1{
         position: relative;
