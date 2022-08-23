@@ -5,740 +5,175 @@
     text-decoration: none;
     list-style: none;
 }
-.grid{
-    display: grid;
-    grid-template-columns: 100%;
-    height: 100vh;
-}
-.grid >* {
-    border: 2px solid black;
-}
-.nosotroslogo img{
-    width: 80px;
-}
-.nosotroslogo:hover{
-    transform: skewY(10deg);
-}
-.gheader{
-    grid-area: gheader;
-    background-color: rgb(23, 7, 7);
-    display: flex;
-    display: grid;
-    border: 2px solid white;
-    width: 100%;
-    height: 120px;
-    position: fixed;
-}
-.nosotroslogo{
-    place-self: center;
-}
-.titulopag3{
+/*page nosotros */
+.titulo22{
     display: flex;
     justify-content: center;
     color: white;
-    font-family: 'Cormorant SC', serif;
-    font-style: italic;
-}
-.menunosotros .nos1{
-    display: inline-block;
-    font-size: 18px;
-    line-height: 2;
-    text-transform: uppercase;
-    padding: 8px 12px;
-    border-radius: 3px;
-}
-.menunosotros a{
-    text-decoration: none;
-    color: white;
-}
-.nos1:hover{
-    background-color: brown;
-    transform: scale(1.2);
-}
-.gheader ul{
-    display: flex;
-    color: white;
-    place-content: center;
-}
-.gridmain{
-    grid-area: gridmain;
-    background-image: url(../assets/fondopagina.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
-}
-.caja0{
-    background-color: rgba(128, 128, 128, 0);
-    text-align: center;
-    color: white;
-}
-.titulo22{
     text-decoration: underline;
     font-size: 40px;
     padding-bottom: 10px;
     text-transform: uppercase;
 }
 .nosotrostexto{
-    padding-bottom: 10px;
+    color: white;
+    text-align: center;
 }
 .nuestroequipo{
-    font-size: 30px;
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-.nombres{
-    text-transform: uppercase;
-}
-.especialidad{
-    text-transform: capitalize;
-    font-style: italic;
-}
-.articulo1{
-    background-color: rgba(193, 190, 190, 0.503);
-    border: 2px solid rgb(24, 116, 107);
-    text-align: center;
-    color: white;
-    transition-duration: 2s;
-}
-.articulo1:hover{
-    transform: scale(1.1);
-    border-radius: 20px;
-}
-.articulo2{
-    background-color: rgba(193, 190, 190, 0.503);
-    border: 2px solid rgb(24, 116, 107);
-    text-align: center;
-    color: white;
-    transition-duration: 2s;
-}
-.articulo2:hover{
-    transform: scale(1.1);
-    border-radius: 20px;
-}
-.articulo3{
-    background-color: rgba(193, 190, 190, 0.503);
-    border: 2px solid rgb(24, 116, 107);
-    text-align: center;
-    color: white;
-    transition-duration: 2s;
-}
-.articulo3:hover{
-    transform: scale(1.1);
-    border-radius: 20px;
-}
-.articulo4{
-    background-color: rgba(193, 190, 190, 0.503);
-    border: 2px solid rgb(24, 116, 107);
-    text-align: center;
-    color: white;
-    transition-duration: 2s;
-}
-.articulo4:hover{
-    transform: scale(1.1);
-    border-radius: 20px;
-}
-.articulo5{
-    background-color: rgba(193, 190, 190, 0.503);
-    border: 2px solid rgb(24, 116, 107);
-    text-align: center;
-    color: white;
-    transition-duration: 2s;
-}
-.articulo5:hover{
-    transform: scale(1.1);
-    border-radius: 20px;
-}
-.gridfooter{
-    grid-area: gridfooter;
-    background-color: rgb(23, 7, 7);
-    display: grid;
-    color: white;
-    border: 2px solid white;
-}
-.titulofooternos{
     display: flex;
     justify-content: center;
+    color: white;
+    text-decoration: underline;
+    font-size: 40px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.navbar-dark .nav-link{
+    color: rgb(241, 233, 233) !important;
+}
+.artnos{
+    background-color: rgba(33, 5, 5, 0.89);
+    border: 2px solid rgb(215, 125, 15);
+    padding-top: 10px;
+    transform: rotateY(30deg);
+    transition-duration: 2s;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.artnos:hover{
+    transform: scale(1);
+    border-radius: 20px;
+}
+.nombres{
+    text-shadow: 0 0 10px #000;
+}
+.nosfooter{
+    background-color: rgb(23, 7, 7);
+    border: 2px solid white;
+    color: white;
+    padding-top: 10px;
+}
+.titulofooternos{
     color: white;
     font-family: 'Cormorant SC', serif;
     font-style: italic;
 }
 .logofooter{
-    height: 40px;
-    place-self: center;
-}
-.direccion{
-    text-decoration: none;
-    color: white;
+    height: 100px;
+    width: 100px;
 }
 .infonos{
-    text-align: center;
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
 }
+.direccion{
+    color: white;
+}
+.direccion:hover{
+    text-decoration: none;
+    color: white;
+}
 .menunosotrosfooter .nos12{
     display: inline-block;
-    line-height: 2;
     text-transform: uppercase;
     padding: 8px 12px;
-}
-.menunosotrosfooter .menuu{
-    display: flex;
-    justify-content: center;
 }
 .noso{
     color: white;
 }
-.siguenos{
-    display: flex;
-    justify-content: center;
+.noso:hover{
+    text-decoration: none;
+    color: white;
 }
-.espacios{
-    padding-top: 10px;
-    text-align: center;
+.siguenos{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
 }
 .derechonoso{
-    display: flex;
-    justify-content: center;
     background-color: blue;
 }
-@media (max-width: 767px){
-    .grid{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "gheader"
-        "gridmain"
-        "gridfooter";
-        grid-template-rows: 120px auto auto;
-    }
-    .menunosotros a{
-        font-size: 15px;
-    }
-    .gridmain{
-        background-image: url(../assets/fondopagina.jpg);
-        background-size: cover;
-    }
-}
-@media screen and (min-width:768px) and (max-width: 1023px) {
-    .grid{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "gheader"
-        "gridmain"
-        "gridfooter";
-        grid-template-rows: 120px auto auto;
-    }
-    .gheader{
-        grid-area: gheader;
-}
-.gridmain{
-    grid-area: gridmain;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
-}
-.caja0 {
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-.gridfooter{
-    grid-area: gridfooter;
-}
-}
-@media screen and (min-width: 1024px){
-    .grid{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "gheader"
-        "gridmain"
-        "gridfooter";
-        grid-template-rows: 120px auto auto;
-    }
-    .gheader{
-        display: flex;
-        justify-content: space-between;
-    }
-    .titulopag3{
-        position: absolute;
-        padding-top: 30px;
-        left: 80px;
-        font-size: 40px;
-        font-family: 'Cormorant SC', serif;
-        font-style: italic;
-    }
-    .nos0{
-        display: flex;
-        right: 100px;
-        padding-top: 35px;
-    }
-    .gridmain{
-        grid-area: gridmain;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, auto);
-    }
-    .caja0 {
-        grid-column: 1/4;
-        grid-row: 1/2;
-    }
-    .articulo1{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .gridfooter{
-        position: relative;
-    }
-    .titulofooternos{
-        display: flex;
-        justify-content: left;
-        margin-left: 20px;
-        font-size: 30px;
-    }
-    .logofooter{
-        position: absolute;
-        left: 110px;
-        top: 30px;
-        height: 80px;
-        width: 80px;
-        padding-top: 10px;
-    }
-    .siguenos{
-        position: absolute;
-        right: 0;
-        padding-right: 80px;
-        top: 10px;
-    }
-    .espacios{
-        position: absolute;
-        right: 0;
-        top: 30px;
-        padding-right: 10px;
-    }
-    .menunosotrosfooter{
-        margin-bottom: -15px;
-    }
+.espacios{
+    letter-spacing: 10px;
+    padding-top: 10px;
 }
 /*page index*/
-.grid1{
-    display: grid;
-    grid-template-columns: 100%;
-    height: 100vh;
-}
-.grid1 >* {
-    border: 2px solid black;
-}
-.nosotroslogo1 img{
-    width: 80px;
-}
-.nosotroslogo1:hover{
-    transform: skewY(10deg);
-}
-.gheader1{
-    grid-area: gheader1;
+header{
     background-color: rgb(23, 7, 7);
-    display: grid;
     border: 2px solid white;
-    width: 100%;
-    height: 120px;
-    position: fixed;
 }
-.nosotroslogo1{
-    place-self: center;
-}
-.titulopag1{
-    display: grid;
-    text-align: center;
+.tituloestudio{
     color: white;
     font-family: 'Cormorant SC', serif;
     font-style: italic;
-}
-.menunosotros1 ul{
-    display: inline-block;
-}
-.nos01 .nosindex{
-    font-size: 18px;
-    line-height: 2;
-    text-transform: uppercase;
-    padding: 4px 8px;
-    border-radius: 3px;
-}
-.menunosotros1 a{
-    text-decoration: none;
-    color: white;
-}
-.nosindex:hover{
-    background-color: brown;
-    transform: scale(1.2);
-}
-.gheader1 ul{
-    display: flex;
-    color: white;
-    place-content: center;
-}
-.gridmain1{
-    grid-area: gridmain1;
-    background-image: url(../assets/fondopagina.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
-    color: white;
-}
-.tituloindex{
-    display: flex;
-    justify-content: center;
     font-size: 40px;
-    text-transform: uppercase;
-    text-decoration: underline;
+    font-weight: bold;
 }
-.container-all1{
-    background-color: rgba(193, 190, 190, 0.503);
-    border: 2px solid rgb(24, 116, 107);
-    display: grid;
-    padding-top: 10px;
-    transform: rotateY(30deg);
-    transition-duration: 2s;
-}
-.container-all1:hover{
-    transform: scale(1);
-    border-radius: 20px;
-}
-.container-all1 img{
-    height: 150px;
-    width: 200px;
-    place-self: center;
-}
-.parrafo1{
-    text-align: center;
-    padding: 10px;
-}
-.container-all2{
-    background-color: rgba(193, 190, 190, 0.503);
-    border: 2px solid rgb(24, 116, 107);
-    display: grid;
-    padding-top: 10px;
-    transform: rotateY(30deg);
-    transition-duration: 2s;
-}
-.container-all2:hover{
-    transform: scale(1);
-    border-radius: 20px;
-}
-.container-all2 img{
-    height: 150px;
-    width: 200px;
-    place-self: center;
-}
-.parrafo2{
-    text-align: center;
-    padding: 10px;
-}
-.container-all3{
-    background-color: rgba(193, 190, 190, 0.503);
-    border: 2px solid rgb(24, 116, 107);
-    display: grid;
-    padding-top: 10px;
-    transform: rotateY(30deg);
-    transition-duration: 2s;
-}
-.container-all3:hover{
-    transform: scale(1);
-    border-radius: 20px;
-}
-.container-all3 img{
-    height: 150px;
-    width: 200px;
-    padding-left: 10px;
-    place-self: center;
-}
-.parrafo3{
-    text-align: center;
-    padding: 10px;
-}
-.container-all4{
-    background-color: rgba(193, 190, 190, 0.503);
-    border: 2px solid rgb(24, 116, 107);
-    display: grid;
-    padding-top: 10px;
-    transform: rotateY(30deg);
-    transition-duration: 2s;
-}
-.container-all4:hover{
-    transform: scale(1);
-    border-radius: 20px;
-}
-.acerca{
-    display: flex;
-    justify-content: center;
-}
-.gridfooter1{
-    grid-area: gridfooter1;
-    background-color: rgb(23, 7, 7);
-    display: grid;
-    color: white;
-    border: 2px solid white;
-}
-.titulofooternos1{
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: 'Cormorant SC', serif;
-    font-style: italic;
-}
-.logofooter1{
-    height: 40px;
-    place-self: center;
-}
-.direccion1{
+.tituloestudio:hover{
     text-decoration: none;
     color: white;
 }
-.infonos1{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-}
-.menunosotrosfooter1 .index1{
-    display: inline-block;
-    line-height: 2;
-    text-transform: uppercase;
-    padding: 8px 12px;
-}
-.menunosotrosfooter1 .menuu1{
-    display: flex;
-    justify-content: center;
-}
-.nus{
-    color: white;
-}
-.siguenos1{
-    display: flex;
-    justify-content: center;
-}
-.espacios1{
-    padding-top: 10px;
-    text-align: center;
-}
-.derechos{
-    display: flex;
-    justify-content: center;
-    background-color: blue;
-}
-@media (max-width: 767px){
-    .grid1{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "gheader1"
-        "gridmain1"
-        "gridfooter1";
-        grid-template-rows: 120px auto auto;
-    }
-    .menunosotros1 a{
-        font-size: 15px;
-    }
-    .gridmain1{
-        background-image: url(../assets/fondopagina.jpg);
-        background-size: cover;
-    }
-}
-@media screen and (min-width:768px) and (max-width: 1023px) {
-    .grid1{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "gheader1"
-        "gridmain1"
-        "gridfooter1";
-        grid-template-rows: 120px auto auto;
-    }
-    .gheader1{
-        grid-area: gheader1;
-}
-.gridmain1{
-    grid-area: gridmain1;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
-}
-.tituloindex{
-    grid-column: 1/4;
-    grid-row: 1/2;
-}
-.container-all1{
-    grid-column: 1/3;
-    grid-row: 2/3;
-}
-.container-all2{
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-.container-all3{
-    grid-column:1/4;
-}
-.container-all3 img{
-    place-self: center;
-}
-.container-all4{
-    grid-column: 1/4;
-}
-.gridfooter1{
-    grid-area: gridfooter1;
-}
-}
-@media screen and (min-width: 1024px){
-    .grid1{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "gheader1"
-        "gridmain1"
-        "gridfooter1";
-        grid-template-rows: 120px auto auto;
-    }
-    .gheader1{
-        display: flex;
-        justify-content: space-between;
-    }
-    .titulopag1{
-        position: absolute;
-        padding-top: 30px;
-        left: 80px;
-        font-size: 40px;
-        font-family: 'Cormorant SC', serif;
-        font-style: italic;
-    }
-    .nos01{
-        display: flex;
-        right: 100px;
-        padding-top: 35px;
-    }
-    .gridmain1{
-        grid-area: gridmain1;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 40px 1fr 1fr;
-    }
-    .tituloindex{
-        grid-column: 1/5;
-        grid-row: 1/2;
-    }
-    .container-all1{
-        grid-column: 1/3;
-        grid-row: 2/3;
-    }
-    .container-all2{
-        grid-column: 3/5;
-        grid-row: 2/3;
-    }
-    .container-all3{
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
-    .container-all4{
-        grid-column: 3/5;
-        grid-row: 3/4;
-    }
-    .gridfooter1{
-        position: relative;
-    }
-    .titulofooternos1{
-        display: flex;
-        justify-content: left;
-        margin-left: 20px;
-        font-size: 30px;
-    }
-    .logofooter1{
-        position: absolute;
-        left: 110px;
-        top: 30px;
-        height: 80px;
-        width: 80px;
-        padding-top: 10px;
-    }
-    .siguenos1{
-        position: absolute;
-        right: 0;
-        padding-right: 80px;
-        top: 10px;
-    }
-    .espacios1{
-        position: absolute;
-        right: 0;
-        top: 30px;
-        padding-right: 10px;
-    }
-    .menunosotrosfooter1{
-        margin-bottom: -15px;
-    }
-}
-/* page servicios */
-.grid2{
-    display: grid;
-    grid-template-columns: 100%;
-    height: 100vh;
-}
-.grid2 >* {
-    border: 2px solid black;
-}
-.nosotroslogo2 img{
+.navbar-brand img{
     width: 80px;
 }
-.logofooter2{
-    height: 40px;
-    place-self: center;
-}
-.gheader2{
-    grid-area: gheader2;
-    background-color: rgb(23, 7, 7);
-    display: grid;
-    border: 2px solid white;
-    width: 100%;
-    height: 120px;
-    position: fixed;
-}
-.nosotroslogo2{
-    place-self: center;
-}
-.nosotroslogo2:hover{
-    transform: skewY(10deg);
-}
-.titulopag2{
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: 'Cormorant SC', serif;
-    font-style: italic;
-}
-.menunosotros2 .servi1{
-    display: inline-block;
+.navbar-nav{
     font-size: 18px;
     line-height: 2;
     text-transform: uppercase;
     padding: 8px 12px;
-    border-radius: 3px;
+    color: white;
 }
-.menunosotros2 a{
+.navbar-nav a{
+    color: white;
+}
+.nav-link{
     text-decoration: none;
     color: white;
+    text-shadow: 0 0 5px #000;
 }
-.servi1:hover{
+.nav-item:hover{
     background-color: brown;
     transform: scale(1.2);
+    border-radius: 3px;
 }
-.gheader2 ul{
-    display: flex;
-    color: white;
-    place-content: center;
-}
-.gridmain2{
-    grid-area: gridmain2;
+main{
     background-image: url(../assets/fondopagina.jpg);
     background-size: cover;
     background-attachment: fixed;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
-    color: white;
 }
+.tituloindex{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: underline;
+    font-size: 40px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.art1{
+    background-color: rgba(193, 190, 190, 0.503);
+    border: 2px solid rgb(24, 116, 107);
+    padding-top: 10px;
+    transform: rotateY(30deg);
+    transition-duration: 2s;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.art1:hover{
+    transform: scale(1);
+    border-radius: 20px;
+}
+.btn-primary:hover{
+    background-color: rgb(233, 150, 72);
+    color: rgb(70, 220, 247);
+}
+article img{
+    height: 180px;
+    width: 290px;
+}
+
+/* page servicios */
 .tituloservi{
     display: flex;
     justify-content: center;
@@ -746,9 +181,12 @@
     text-transform: uppercase;
     text-decoration: underline;
 }
+.mainservi{
+    color: white;
+}
 .titulo2servi{
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     text-transform: uppercase;
     font-style: italic;
 }
@@ -758,7 +196,6 @@
 .articulo1servi{
     background-color: rgb(33, 5, 5);
     border: 2px solid rgb(215, 125, 15);
-    text-align: center;
     transition-duration: 2s;
 }
 .articulo1servi:hover{
@@ -767,7 +204,6 @@
 .articulo2servi{
     background-color: rgb(33, 5, 5);
     border: 2px solid rgb(215, 125, 15);
-    text-align: center;
     transition-duration: 2s;
 }
 .articulo2servi:hover{
@@ -776,180 +212,29 @@
 .articulo3servi{
     background-color: rgb(33, 5, 5);
     border: 2px solid rgb(215, 125, 15);
-    text-align: center;
     transition-duration: 2s;
 }
 .articulo3servi:hover{
     transform: scale(1.1);
 }
-.gridfooter2{
-    grid-area: gridfooter2;
-    background-color: rgb(23, 7, 7);
-    display: grid;
-    color: white;
-    border: 2px solid white;
+.carousel-inner img{
+    width: 100%;
+    height: 50%;
 }
-.titulofooter2{
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: 'Cormorant SC', serif;
+.titulocarru{
+    text-shadow: 0 0 10px #000;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+.parrafocarru{
+    font-size: 20px;
     font-style: italic;
 }
-.logofooter2{
-    height: 40px;
-    place-self: center;
-}
-.direccion2{
-    text-decoration: none;
-    color: white;
-}
-.infoservi{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-}
-.menuservifooter .servi2{
-    display: inline-block;
-    line-height: 2;
-    text-transform: uppercase;
-    padding: 8px 12px;
-}
-.menuservifooter .menuu2{
-    display: flex;
-    justify-content: center;
-}
-.servi22{
-    color: white;
-}
-.siguenos2{
-    display: flex;
-    justify-content: center;
-}
-.espacios2{
-    padding-top: 10px;
-    text-align: center;
-}
-.derechos2{
-    display: flex;
-    justify-content: center;
-    background-color: blue;
-}
-@media (max-width: 767px){
-    .grid2{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "gheader2"
-        "gridmain2"
-        "gridfooter2";
-        grid-template-rows: 120px auto auto;
-    }
-    .menunosotros2 a{
-        font-size: 15px;
-    }
-    .gridmain2{
-        background-image: url(../assets/fondopagina.jpg);
-        background-size: cover;
-    }
-    .menuu2{
-        margin-bottom: -15px;
-    }
-}
-@media screen and (min-width:768px) and (max-width: 1023px) {
-    .grid2{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "gheader2"
-        "gridmain2"
-        "gridfooter2";
-        grid-template-rows: 120px auto auto;
-    }
-    .gheader2{
-        grid-area: gheader2;
-}
-.gridmain2{
-    grid-area: gridmain2;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
-}
-.tituloservi{
-    grid-column: 1/3;
-}
-.articulo1servi{
-    grid-column: 1/3;
-    grid-row: 2/3;
-}
-.gridfooter2{
-    grid-area: gridfooter2;
-}
-}
-@media screen and (min-width: 1024px){
-    .grid2{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "gheader2"
-        "gridmain2"
-        "gridfooter2";
-        grid-template-rows: 120px auto auto;
-    }
-    .gheader2{
-        display: flex;
-        justify-content: space-between;
-    }
-    .titulopag2{
-        position: absolute;
-        padding-top: 30px;
-        left: 80px;
-        font-size: 40px;
-        font-family: 'Cormorant SC', serif;
-        font-style: italic;
-    }
-    .nos00{
-        display: flex;
-        right: 100px;
-        padding-top: 35px;
-    }
-    .gridmain2{
-        grid-area: gridmain2;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, auto);
-    }
-    .gridfooter2{
-        position: relative;
-    }
-    .titulofooter2{
-        display: flex;
-        justify-content: left;
-        margin-left: 20px;
-        font-size: 30px;
-    }
-    .logofooter2{
-        position: absolute;
-        left: 110px;
-        top: 30px;
-        height: 80px;
-        width: 80px;
-        padding-top: 10px;
-    }
-    .siguenos2{
-        position: absolute;
-        right: 0;
-        padding-right: 80px;
-        top: 10px;
-    }
-    .espacios2{
-        position: absolute;
-        right: 0;
-        top: 30px;
-        padding-right: 10px;
-    }
-    .menuservifooter{
-        margin-bottom: -15px;
-    }
-    .tituloservi{
-        grid-column: 1/4;
-        grid-row: 1/2;
-    }
+.carousel-indicators li{
+    border-radius: 40%;
+    height: 20px;
+    width: 20px;
+    border: 2px solid rgb(215, 125, 15);
 }
 /* page clientes */
 .grid4{
