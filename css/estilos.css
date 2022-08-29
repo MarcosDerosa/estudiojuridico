@@ -1,0 +1,896 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*page nosotros */
+header {
+  background-color: rgb(23, 7, 7);
+}
+
+.navbar-dark .nav-link {
+  color: rgb(241, 233, 233) !important;
+}
+
+.mainnosotros .titulo22 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: underline;
+  font-size: 40px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.mainnosotros .nosotrostexto {
+  color: white;
+  text-align: center;
+}
+.mainnosotros .nuestroequipo {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: underline;
+  font-size: 40px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.mainnosotros .artnos {
+  background-color: rgba(33, 5, 5, 0.89);
+  border: 2px solid rgb(215, 125, 15);
+  padding-top: 10px;
+  transform: rotateY(30deg);
+  transition-duration: 2s;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.mainnosotros .artnos .artnos:hover {
+  transform: scale(1);
+  border-radius: 20px;
+}
+.mainnosotros .nombres {
+  text-shadow: 0 0 10px #000;
+}
+
+.nosfooter {
+  background-color: rgb(23, 7, 7);
+  border: 2px solid white;
+  color: white;
+  padding-top: 10px;
+}
+.nosfooter .titulofooternos {
+  color: white;
+  font-family: "Cormorant SC", serif;
+  font-style: italic;
+}
+.nosfooter .logofooter {
+  height: 100px;
+  width: 100px;
+}
+.nosfooter .infonos {
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+.nosfooter .direccion {
+  color: white;
+}
+.nosfooter .direccion:hover {
+  text-decoration: none;
+  color: white;
+}
+.nosfooter .menunosotrosfooter .nos12 {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 8px 12px;
+}
+.nosfooter .noso {
+  color: white;
+}
+.nosfooter .noso:hover {
+  text-decoration: none;
+  color: white;
+}
+.nosfooter .siguenos {
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+}
+.nosfooter .derechonoso {
+  background-color: blue;
+}
+.nosfooter .espacios {
+  letter-spacing: 10px;
+  padding-top: 10px;
+}
+
+/*page index*/
+header {
+  background-color: rgb(23, 7, 7);
+  border: 2px solid white;
+}
+
+.tituloestudio {
+  color: white;
+  font-family: "Cormorant SC", serif;
+  font-style: italic;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.tituloestudio:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-brand img {
+  width: 80px;
+}
+
+.navbar-nav {
+  font-size: 18px;
+  line-height: 2;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  color: white;
+}
+
+.navbar-nav a {
+  color: white;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.nav-item:hover {
+  background-color: brown;
+  transform: scale(1.2);
+  border-radius: 3px;
+}
+
+main {
+  background-image: url(../assets/fondopagina.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.tituloindex {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: underline;
+  font-size: 40px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.art1 {
+  background-color: rgba(193, 190, 190, 0.503);
+  border: 2px solid rgb(24, 116, 107);
+  padding-top: 10px;
+  transform: rotateY(30deg);
+  transition-duration: 2s;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.art1:hover {
+  transform: scale(1);
+  border-radius: 20px;
+}
+
+.btn-primary:hover {
+  background-color: rgb(233, 150, 72);
+  color: rgb(70, 220, 247);
+}
+
+article img {
+  height: 180px;
+  width: 290px;
+}
+
+/* page servicios */
+.tituloservi {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.mainservi {
+  color: white;
+}
+
+.titulo2servi {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.parrafoservi {
+  padding: 10px;
+}
+
+.articulo1servi {
+  background-color: rgb(33, 5, 5);
+  border: 2px solid rgb(215, 125, 15);
+  transition-duration: 2s;
+}
+
+.articulo1servi:hover {
+  transform: scale(1.1);
+}
+
+.articulo2servi {
+  background-color: rgb(33, 5, 5);
+  border: 2px solid rgb(215, 125, 15);
+  transition-duration: 2s;
+}
+
+.articulo2servi:hover {
+  transform: scale(1.1);
+}
+
+.articulo3servi {
+  background-color: rgb(33, 5, 5);
+  border: 2px solid rgb(215, 125, 15);
+  transition-duration: 2s;
+}
+
+.articulo3servi:hover {
+  transform: scale(1.1);
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 50%;
+}
+
+.titulocarru {
+  text-shadow: 0 0 10px #000;
+  text-transform: capitalize;
+  font-size: 50px;
+}
+
+.parrafocarru {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.carousel-indicators li {
+  border-radius: 40%;
+  height: 20px;
+  width: 20px;
+  border: 2px solid rgb(215, 125, 15);
+}
+
+/* page clientes */
+.grid4 {
+  display: grid;
+  grid-template-columns: 100%;
+  height: 100vh;
+}
+
+.grid4 > * {
+  border: 2px solid black;
+}
+
+.nosotroslogo4 img {
+  width: 80px;
+}
+
+.gheader4 {
+  grid-area: gheader4;
+  background-color: rgb(23, 7, 7);
+  display: flex;
+  display: grid;
+  border: 2px solid white;
+  width: 100%;
+  height: 120px;
+  position: fixed;
+}
+
+.nosotroslogo4 {
+  place-self: center;
+}
+
+.nosotroslogo4:hover {
+  transform: skewY(10deg);
+}
+
+.titulopag4 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Cormorant SC", serif;
+  font-style: italic;
+}
+
+.menunosotros4 .nos4 {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 2;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.menunosotros4 a {
+  text-decoration: none;
+  color: white;
+}
+
+.nos4:hover {
+  background-color: brown;
+  transform: scale(1.2);
+}
+
+.gheader4 ul {
+  display: flex;
+  color: white;
+  place-content: center;
+}
+
+.gridclientes {
+  grid-area: gridclientes;
+  background-image: url(../assets/fondopagina.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.tituloclientes {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.parrafocliente {
+  padding: 10px;
+}
+
+.nombrecliente {
+  padding: 10px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.clien1 {
+  background-color: rgb(33, 5, 5);
+  border: 2px solid rgb(215, 125, 15);
+  text-align: center;
+  transform: skewX(10deg);
+}
+
+.clien2 {
+  background-color: rgb(33, 5, 5);
+  border: 2px solid rgb(215, 125, 15);
+  text-align: center;
+  transform: skewX(10deg);
+}
+
+.clien3 {
+  background-color: rgb(33, 5, 5);
+  border: 2px solid rgb(215, 125, 15);
+  text-align: center;
+  transform: skewX(10deg);
+}
+
+.parra1 {
+  padding: 10px;
+}
+
+.clientesfooter {
+  grid-area: clientesfooter;
+  background-color: rgb(23, 7, 7);
+  display: grid;
+  color: white;
+  border: 2px solid white;
+}
+
+.titulofooterclien {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Cormorant SC", serif;
+  font-style: italic;
+}
+
+.logofooter4 {
+  height: 40px;
+  place-self: center;
+}
+
+.direccion4 {
+  text-decoration: none;
+  color: white;
+}
+
+.infoclien {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+
+.menuclientesfooter .clien4 {
+  display: inline-block;
+  line-height: 2;
+  text-transform: uppercase;
+  padding: 8px 12px;
+}
+
+.menuclientesfooter .menuu4 {
+  display: flex;
+  justify-content: center;
+}
+
+.noso4 {
+  color: white;
+}
+
+.siguenos4 {
+  display: flex;
+  justify-content: center;
+}
+
+.espacios4 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.derechos4 {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
+
+@media (max-width: 767px) {
+  .grid4 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "gheader4" "gridclientes" "clientesfooter";
+    grid-template-rows: 120px auto auto;
+  }
+  .menunosotros4 a {
+    font-size: 15px;
+  }
+  .gridclientes {
+    background-image: url(../assets/fondopagina.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid4 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "gheader4" "gridclientes" "clientesfooter";
+    grid-template-rows: 120px auto auto;
+  }
+  .gheader {
+    grid-area: gheader;
+  }
+  .gridclientes {
+    grid-area: gridclientes;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  .clien0 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .clien3 {
+    grid-column: 1/3;
+  }
+  .clientesfooter {
+    grid-area: clientesfooter;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid4 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "gheader4" "gridclientes" "clientesfooter";
+    grid-template-rows: 120px auto auto;
+  }
+  .gheader4 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .titulopag4 {
+    position: absolute;
+    padding-top: 30px;
+    left: 80px;
+    font-size: 40px;
+    font-family: "Cormorant SC", serif;
+    font-style: italic;
+  }
+  .clientes {
+    display: flex;
+    right: 100px;
+    padding-top: 35px;
+  }
+  .gridclientes {
+    grid-area: gridclientes;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  .clien0 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .clientesfooter {
+    position: relative;
+  }
+  .titulofooterclien {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    font-size: 30px;
+  }
+  .logofooter4 {
+    position: absolute;
+    left: 110px;
+    top: 30px;
+    height: 80px;
+    width: 80px;
+    padding-top: 10px;
+  }
+  .siguenos4 {
+    position: absolute;
+    right: 0;
+    padding-right: 80px;
+    top: 10px;
+  }
+  .espacios4 {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    padding-right: 10px;
+  }
+  .menuclientesfooter {
+    margin-bottom: -15px;
+  }
+}
+/* page contacto */
+.grid5 {
+  display: grid;
+  grid-template-columns: 100%;
+  height: 100vh;
+}
+
+.grid5 > * {
+  border: 2px solid black;
+}
+
+.nosotroslogo5 img {
+  width: 80px;
+}
+
+.gheader5 {
+  grid-area: gheader5;
+  background-color: rgb(23, 7, 7);
+  display: flex;
+  display: grid;
+  border: 2px solid white;
+  width: 100%;
+  height: 120px;
+  position: fixed;
+}
+
+.nosotroslogo5 {
+  place-self: center;
+}
+
+.nosotroslogo5 {
+  transform: skewY(10deg);
+}
+
+.titulopag5 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Cormorant SC", serif;
+  font-style: italic;
+}
+
+.menucontacto .con1 {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 2;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.menucontacto a {
+  text-decoration: none;
+  color: white;
+}
+
+.con1:hover {
+  background-color: brown;
+  transform: scale(1.2);
+}
+
+.gheader5 ul {
+  display: flex;
+  color: white;
+  place-content: center;
+}
+
+.maincontacto {
+  grid-area: maincontacto;
+  background-image: url(../assets/fondopagina.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.titulocontacto {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: cursive;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.formulario {
+  place-self: center;
+  text-transform: uppercase;
+}
+
+input {
+  transition: all 2s;
+}
+
+input:focus {
+  font-size: 50px;
+  border: 4px solid cornflowerblue color red;
+}
+
+input::-moz-placeholder {
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  font-style: italic;
+}
+
+input:-ms-input-placeholder {
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  font-style: italic;
+}
+
+input::placeholder {
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  font-style: italic;
+}
+
+.titulomapa {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.mapa {
+  display: grid;
+  place-self: center;
+  height: 280px;
+  width: 380px;
+}
+
+.mapa:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+
+.contactofooter {
+  grid-area: contactofooter;
+  background-color: rgb(23, 7, 7);
+  display: grid;
+  color: white;
+  border: 2px solid white;
+}
+
+.titulofootercon {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Cormorant SC", serif;
+  font-style: italic;
+}
+
+.logofootercon {
+  height: 40px;
+  place-self: center;
+}
+
+.direccion5 {
+  text-decoration: none;
+  color: white;
+}
+
+.infocon {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+
+.menucontactofooter .con12 {
+  display: inline-block;
+  line-height: 2;
+  text-transform: uppercase;
+  padding: 8px 12px;
+}
+
+.menucontactofooter .menuu5 {
+  display: flex;
+  justify-content: center;
+}
+
+.con123 {
+  color: white;
+}
+
+.siguenos5 {
+  display: flex;
+  justify-content: center;
+}
+
+.espacios5 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.derechos5 {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
+
+@media (max-width: 767px) {
+  .grid5 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "gheader5" "maincontacto" "contactofooter";
+    grid-template-rows: 120px auto auto;
+  }
+  .menucontacto a {
+    font-size: 15px;
+  }
+  .maincontacto {
+    background-image: url(../assets/fondopagina.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid5 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "gheader5" "maincontacto" "contactofooter";
+    grid-template-rows: 120px auto auto;
+  }
+  .gheader5 {
+    grid-area: gheader5;
+  }
+  .maincontacto {
+    grid-area: maincontacto;
+  }
+  .contactofooter {
+    grid-area: contactofooter;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid5 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "gheader5" "maincontacto" "contactofooter";
+    grid-template-rows: 120px auto auto;
+  }
+  .gheader5 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .titulopag5 {
+    position: absolute;
+    padding-top: 30px;
+    left: 80px;
+    font-size: 40px;
+    font-family: "Cormorant SC", serif;
+    font-style: italic;
+  }
+  .con0 {
+    display: flex;
+    right: 100px;
+    padding-top: 35px;
+  }
+  .maincontacto {
+    grid-area: maincontacto;
+  }
+  .contactofooter {
+    position: relative;
+  }
+  .titulofootercon {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    font-size: 30px;
+  }
+  .logofootercon {
+    position: absolute;
+    left: 110px;
+    top: 30px;
+    height: 80px;
+    width: 80px;
+    padding-top: 10px;
+  }
+  .siguenos5 {
+    position: absolute;
+    right: 0;
+    padding-right: 80px;
+    top: 10px;
+  }
+  .espacios5 {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    padding-right: 10px;
+  }
+  .menucontactofooter {
+    margin-bottom: -15px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,444 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+$color0: rgb(23, 7, 7);
+$color1: white;
+$color2: rgba(33, 5, 5, 0.89);
+$color3: rgb(215, 125, 15);
+$color4: blue;
+$font: 'Times New Roman',
+Times,
+serif;
+$font1: 'Cormorant SC',
+serif;
+$upper: uppercase;
+$f40: 40px;
+$subrayado: underline;
+
+/*page nosotros */
+header {
+    background-color: $color0;
+    border: 2px solid $color1;
+
+    .navbar-dark .nav-link {
+        color: rgb(241, 233, 233) !important;
+    }
+}
+
+.mainnosotros {
+    .titulo22 {
+        display: flex;
+        justify-content: center;
+        color: $color1;
+        text-decoration: $subrayado;
+        font-size: $f40;
+        padding-bottom: 10px;
+        text-transform: $upper;
+    }
+
+    .nosotrostexto {
+        color: $color1;
+        text-align: center;
+    }
+
+    .nuestroequipo {
+        display: flex;
+        justify-content: center;
+        color: $color1;
+        text-decoration: $subrayado;
+        font-size: $f40;
+        padding-bottom: 10px;
+        text-transform: $upper;
+    }
+
+    .artnos {
+        background-color: $color2;
+        border: 2px solid $color3;
+        padding-top: 10px;
+        transform: rotateY(30deg);
+        transition-duration: 2s;
+        color: $color1;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    :hover {
+        transform: scale(1);
+        border-radius: 20px;
+    }
+
+    .nombres {
+        text-shadow: 0 0 10px #000;
+    }
+}
+
+.nosfooter {
+    background-color: $color0;
+    border: 2px solid $color1;
+    color: $color1;
+    padding-top: 10px;
+
+    .titulofooternos {
+        color: $color1;
+        font-family: $font1;
+        font-style: italic;
+    }
+
+    .logofooter {
+        height: 100px;
+        width: 100px;
+    }
+
+    .infonos {
+        font-family: $font;
+        text-transform: $upper;
+    }
+
+    .direccion {
+        color: $color1;
+    }
+
+    .direccion:hover {
+        text-decoration: none;
+        color: $color1;
+    }
+
+    .menunosotrosfooter .nos12 {
+        display: inline-block;
+        text-transform: $upper;
+        padding: 8px 12px;
+    }
+
+    .noso {
+        color: $color1;
+    }
+
+    .noso:hover {
+        text-decoration: none;
+        color: $color1;
+    }
+
+    .siguenos {
+        text-transform: $upper;
+        font-family: $font;
+    }
+
+    .derechonoso {
+        background-color: $color4;
+    }
+
+    .espacios {
+        letter-spacing: 10px;
+        padding-top: 10px;
+    }
+}
+
+/*page index*/
+header {
+    background-color: $color0;
+    border: 2px solid $color1;
+
+    .tituloestudio {
+        color: $color1;
+        font-family: $font1;
+        font-style: italic;
+        font-size: $f40;
+        font-weight: bold;
+
+        :hover {
+            text-decoration: none;
+            color: $color1;
+        }
+    }
+
+    .navbar {
+        .navbar-brand img {
+            width: 80px;
+        }
+
+        .navbar-nav {
+            font-size: 18px;
+            line-height: 2;
+            text-transform: $upper;
+            padding: 8px 12px;
+            color: $color1;
+
+            a {
+                color: $color1;
+            }
+
+            .nav-link {
+                text-decoration: none;
+                color: $color1;
+                text-shadow: 0 0 5px #000;
+            }
+        }
+
+        .nav-item:hover {
+            background-color: brown;
+            transform: scale(1.2);
+            border-radius: 3px;
+        }
+    }
+
+}
+
+main {
+    background-image: url(../assets/fondopagina.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    .tituloindex {
+        display: flex;
+        justify-content: center;
+        color: $color1;
+        text-decoration: $subrayado;
+        font-size: $f40;
+        padding-bottom: 10px;
+        text-transform: $upper;
+    }
+
+    .art1 {
+        background-color: $color2;
+        border: 2px solid $color3;
+        padding-top: 10px;
+        transform: rotateY(30deg);
+        transition-duration: 2s;
+        color: $color1;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    :hover {
+        transform: scale(1);
+        border-radius: 20px;
+    }
+
+    .btn-primary:hover {
+        background-color: rgb(233, 150, 72);
+        color: rgb(70, 220, 247);
+    }
+
+    img {
+        height: 180px;
+        width: 290px;
+    }
+}
+
+/* page servicios */
+
+.mainservi {
+    color: $color1;
+
+    .tituloservi {
+        display: flex;
+        justify-content: center;
+        font-size: $f40;
+        text-transform: $upper;
+        text-decoration: $subrayado;
+    }
+
+    .articulo1servi {
+        background-color: $color2;
+        border: 2px solid $color3;
+        transition-duration: 2s;
+    }
+
+    .articulo1servi:hover {
+        transform: scale(1.1);
+    }
+
+    .articulo2servi {
+        background-color: $color2;
+        border: 2px solid $color3;
+        transition-duration: 2s;
+    }
+
+    .articulo2servi:hover {
+        transform: scale(1.1);
+    }
+
+    .articulo3servi {
+        background-color: $color2;
+        border: 2px solid $color3;
+        transition-duration: 2s;
+    }
+
+    .articulo3servi:hover {
+        transform: scale(1.1);
+    }
+
+    .carousel-inner {
+        img {
+            width: 100%;
+            height: 50%;
+        }
+
+        .titulocarru {
+            text-shadow: 0 0 10px #000;
+            text-transform: capitalize;
+            font-size: 50px;
+        }
+
+        .parrafocarru {
+            font-size: 20px;
+            font-style: italic;
+        }
+    }
+
+    .carousel-indicators {
+
+        li {
+            border-radius: 40%;
+            height: 20px;
+            width: 20px;
+            border: 2px solid $color3;
+        }
+    }
+}
+
+/* page clientes */
+
+.mainclientes {
+    background-image: url(../assets/fondopagina.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    gap: 20px;
+    padding: 10px;
+    color: $color1;
+
+    .clien0 {
+        .tituloclientes {
+            font-size: 40px;
+            text-transform: $upper;
+            text-decoration: $subrayado;
+        }
+
+        .parrafocliente {
+            padding: 10px;
+        }
+
+    }
+
+    .nombrecliente {
+        padding: 10px;
+        font-style: italic;
+        text-transform: $upper;
+    }
+
+    .clien1 {
+        background-color: $color2;
+        border: 2px solid $color3;
+        text-align: center;
+        transform: skewX(10deg);
+    }
+
+    .clien2 {
+        background-color: $color2;
+        border: 2px solid $color3;
+        text-align: center;
+        transform: skewX(10deg);
+    }
+
+    .clien3 {
+        background-color: $color2;
+        border: 2px solid $color3;
+        text-align: center;
+        transform: skewX(10deg);
+    }
+
+    .parra1 {
+        padding: 10px;
+    }
+}
+
+
+/* page contacto */
+
+.maincontacto {
+    grid-area: maincontacto;
+    background-image: url(../assets/fondopagina.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+    color: $color1;
+
+    .titulocontacto {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        text-transform: $upper;
+        text-decoration: $subrayado;
+        font-family: cursive;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-delay: 5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        @keyframes aparecer {
+            0% {
+                opacity: 0;
+            }
+        
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+    .formulario {
+        place-self: center;
+        text-transform: $upper;
+        
+        input {
+            transition: all 2s;
+        }
+        :focus {
+            font-size: 50px;
+            border: 4px solid cornflowerblue color red;
+        }
+        ::placeholder {
+            color: black;
+            font-weight: 900;
+            text-align: center;
+            font-style: italic;
+        }
+    }
+    .map{
+        display: grid;
+        place-self: center;
+        
+        .titulomapa {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            text-transform: $upper;
+            text-decoration: $subrayado;
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-delay: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        
+        .mapa {
+            display: grid;
+            place-self: center;
+            height: 280px;
+            width: 380px;
+        }
+        
+        .mapa:hover {
+            transform: scale(1.1);
+            transition: all 2s;
+        }
+    }
+}
