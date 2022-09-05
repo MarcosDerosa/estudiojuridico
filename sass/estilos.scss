@@ -57,9 +57,6 @@ header {
     }
 
     .artnos {
-        background-color: $color2;
-        border: 2px solid $color3;
-        padding-top: 10px;
         transform: rotateY(30deg);
         transition-duration: 2s;
         color: $color1;
@@ -76,7 +73,15 @@ header {
         text-shadow: 0 0 10px #000;
     }
 }
+@mixin sizes ($bgcolor, $border, $paddingt) {
+    background-color: $bgcolor;
+    border: $border;
+    padding-top: $paddingt;
+}
 
+    .artnos {
+        @include sizes($color2,2px solid $color3, 10px)
+    }
 .nosfooter {
     background-color: $color0;
     border: 2px solid $color1;
@@ -133,8 +138,13 @@ header {
     }
 
     .espacios {
-        letter-spacing: 10px;
+        letter-spacing: 20px;
         padding-top: 10px;
+        :hover{
+            color: $color3;
+            transform: scalex(1.2);
+            transition-duration: 2s;
+        }
     }
 }
 
@@ -229,6 +239,9 @@ main {
         width: 290px;
     }
 }
+.espacios1{
+    @extend .espacios;
+    }
 
 /* page servicios */
 
@@ -301,8 +314,10 @@ main {
         }
     }
 }
-
-/* page clientes */
+.espacios2{
+    @extend .espacios
+}
+/* clientes */
 
 .mainclientes {
     background-image: url(../assets/fondopagina.jpg);
@@ -356,10 +371,29 @@ main {
         padding: 10px;
     }
 }
-
+.espacios3{
+    @extend .espacios
+}
 
 /* page contacto */
-
+$redes: (
+    Times: red,
+    arial: yellow,
+    curisve: green,
+    sans-serif: pink,
+    helvetica: purple,
+    verdana: blue,
+    fantasy: white,
+);
+@each $red, $font in $redes {
+    .btn--#{$font} {
+        background-color: $color2;
+        border: 2px solid $color3;
+        font-family: $red;
+        color: $font;
+        font-size: 25px;
+    }
+}
 .maincontacto {
     grid-area: maincontacto;
     background-image: url(../assets/fondopagina.jpg);
@@ -441,4 +475,7 @@ main {
             transition: all 2s;
         }
     }
+}
+.espacios4{
+    @extend .espacios
 }

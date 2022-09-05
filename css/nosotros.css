@@ -38,9 +38,6 @@ header .navbar-dark .nav-link {
   text-transform: uppercase;
 }
 .mainnosotros .artnos {
-  background-color: rgba(33, 5, 5, 0.89);
-  border: 2px solid rgb(215, 125, 15);
-  padding-top: 10px;
   transform: rotateY(30deg);
   transition-duration: 2s;
   color: white;
@@ -53,6 +50,12 @@ header .navbar-dark .nav-link {
 }
 .mainnosotros .nombres {
   text-shadow: 0 0 10px #000;
+}
+
+.artnos {
+  background-color: rgba(33, 5, 5, 0.89);
+  border: 2px solid rgb(215, 125, 15);
+  padding-top: 10px;
 }
 
 .nosfooter {
@@ -100,9 +103,14 @@ header .navbar-dark .nav-link {
 .nosfooter .derechonoso {
   background-color: blue;
 }
-.nosfooter .espacios {
-  letter-spacing: 10px;
+.nosfooter .espacios, .nosfooter .espacios4, .nosfooter .espacios3, .nosfooter .espacios2, .nosfooter .espacios1 {
+  letter-spacing: 20px;
   padding-top: 10px;
+}
+.nosfooter .espacios :hover, .nosfooter .espacios4 :hover, .nosfooter .espacios3 :hover, .nosfooter .espacios2 :hover, .nosfooter .espacios1 :hover {
+  color: rgb(215, 125, 15);
+  transform: scalex(1.2);
+  transition-duration: 2s;
 }
 
 /*page index*/
@@ -237,7 +245,7 @@ main img {
   border: 2px solid rgb(215, 125, 15);
 }
 
-/* page clientes */
+/* clientes */
 .mainclientes {
   background-image: url(../assets/fondopagina.jpg);
   background-size: cover;
@@ -282,6 +290,62 @@ main img {
 }
 
 /* page contacto */
+.btn--red {
+  background-color: rgba(33, 5, 5, 0.89);
+  border: 2px solid rgb(215, 125, 15);
+  font-family: Times;
+  color: red;
+  font-size: 25px;
+}
+
+.btn--yellow {
+  background-color: rgba(33, 5, 5, 0.89);
+  border: 2px solid rgb(215, 125, 15);
+  font-family: arial;
+  color: yellow;
+  font-size: 25px;
+}
+
+.btn--green {
+  background-color: rgba(33, 5, 5, 0.89);
+  border: 2px solid rgb(215, 125, 15);
+  font-family: curisve;
+  color: green;
+  font-size: 25px;
+}
+
+.btn--pink {
+  background-color: rgba(33, 5, 5, 0.89);
+  border: 2px solid rgb(215, 125, 15);
+  font-family: sans-serif;
+  color: pink;
+  font-size: 25px;
+}
+
+.btn--purple {
+  background-color: rgba(33, 5, 5, 0.89);
+  border: 2px solid rgb(215, 125, 15);
+  font-family: helvetica;
+  color: purple;
+  font-size: 25px;
+}
+
+.btn--blue {
+  background-color: rgba(33, 5, 5, 0.89);
+  border: 2px solid rgb(215, 125, 15);
+  font-family: verdana;
+  color: blue;
+  font-size: 25px;
+}
+
+.btn--white {
+  background-color: rgba(33, 5, 5, 0.89);
+  border: 2px solid rgb(215, 125, 15);
+  font-family: fantasy;
+  color: white;
+  font-size: 25px;
+}
+
 .maincontacto {
   grid-area: maincontacto;
   background-image: url(../assets/fondopagina.jpg);
