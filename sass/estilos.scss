@@ -24,6 +24,8 @@ $subrayado: underline;
 header {
     background-color: $color0;
     border: 2px solid $color1;
+    position: fixed;
+    z-index: 1;
 
     .navbar-dark .nav-link {
         color: rgb(241, 233, 233) !important;
@@ -31,29 +33,35 @@ header {
 }
 
 .mainnosotros {
+    padding-top: 90px;
     .titulo22 {
         display: flex;
         justify-content: center;
         color: $color1;
-        text-decoration: $subrayado;
-        font-size: $f40;
+        text-decoration: $subrayado $color3;
+        font-size: 50px;
         padding-bottom: 10px;
-        text-transform: $upper;
+        text-transform: capitalize;
+        font-family: $font1;
+        font-style: italic;
     }
 
     .nosotrostexto {
         color: $color1;
         text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .nuestroequipo {
         display: flex;
         justify-content: center;
         color: $color1;
-        text-decoration: $subrayado;
-        font-size: $f40;
+        text-decoration: $subrayado $color3;
+        font-size: 50px;
         padding-bottom: 10px;
-        text-transform: $upper;
+        text-transform: capitalize;
+        font-style: italic;
+        font-family: $font1;
     }
 
     .artnos {
@@ -157,7 +165,7 @@ header {
         color: $color1;
         font-family: $font1;
         font-style: italic;
-        font-size: $f40;
+        font-size: 25px;
         font-weight: bold;
 
         :hover {
@@ -202,15 +210,17 @@ main {
     background-image: url(../assets/fondopagina.jpg);
     background-size: cover;
     background-attachment: fixed;
-
+    padding-top: 90px;
     .tituloindex {
         display: flex;
         justify-content: center;
         color: $color1;
-        text-decoration: $subrayado;
-        font-size: $f40;
+        text-decoration: $subrayado $color3;
+        font-size: 50px;
         padding-bottom: 10px;
-        text-transform: $upper;
+        text-transform: capitalize;
+        font-family: $font1;
+        font-style: italic;
     }
 
     .art1 {
@@ -222,6 +232,12 @@ main {
         color: $color1;
         padding: 20px;
         margin-bottom: 20px;
+
+        .textoindex{
+            padding-top: 20px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
     }
 
     :hover {
@@ -251,15 +267,20 @@ main {
     .tituloservi {
         display: flex;
         justify-content: center;
-        font-size: $f40;
-        text-transform: $upper;
-        text-decoration: $subrayado;
-    }
+        font-size: 50px;
+        text-transform: capitalize;
+        text-decoration: $subrayado $color3;
+        font-family: $font1;
+        font-style: italic;
 
+    }
     .articulo1servi {
         background-color: $color2;
         border: 2px solid $color3;
         transition-duration: 2s;
+        margin-bottom: 20px;
+        margin-top: 10px;
+
     }
 
     .articulo1servi:hover {
@@ -270,6 +291,7 @@ main {
         background-color: $color2;
         border: 2px solid $color3;
         transition-duration: 2s;
+        margin-bottom: 20px;
     }
 
     .articulo2servi:hover {
@@ -280,13 +302,26 @@ main {
         background-color: $color2;
         border: 2px solid $color3;
         transition-duration: 2s;
+        margin-bottom: 20px;
     }
 
     .articulo3servi:hover {
         transform: scale(1.1);
     }
 
+    .titulo2servi{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-transform: capitalize;
+    }
+
+    .parrafoservi{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
     .carousel-inner {
+        margin-top: 20px;
+        margin-bottom: 20px;
         img {
             width: 100%;
             height: 50%;
@@ -323,15 +358,17 @@ main {
     background-image: url(../assets/fondopagina.jpg);
     background-size: cover;
     background-attachment: fixed;
-    gap: 20px;
     padding: 10px;
     color: $color1;
+    padding-top: 90px;
 
     .clien0 {
         .tituloclientes {
-            font-size: 40px;
-            text-transform: $upper;
-            text-decoration: $subrayado;
+            font-size: 50px;
+            text-transform: capitalize;
+            text-decoration: $subrayado $color3;
+            font-family: $font1;
+            font-style: italic;
         }
 
         .parrafocliente {
@@ -345,30 +382,38 @@ main {
         font-style: italic;
         text-transform: $upper;
     }
-
+.probando{
+    padding: 80px;
+}
     .clien1 {
         background-color: $color2;
         border: 2px solid $color3;
         text-align: center;
-        transform: skewX(10deg);
     }
 
     .clien2 {
         background-color: $color2;
         border: 2px solid $color3;
         text-align: center;
-        transform: skewX(10deg);
-    }
 
+        img{
+            height: 400px;
+        }
+    }
     .clien3 {
         background-color: $color2;
         border: 2px solid $color3;
         text-align: center;
-        transform: skewX(10deg);
     }
 
     .parra1 {
         padding: 10px;
+        padding-top: 60px;
+        font-size: 20px;
+    }
+    .parra2{
+        padding-top: 60px;
+        font-size: 20px;
     }
 }
 .espacios3{
@@ -404,19 +449,22 @@ $redes: (
     gap: 20px;
     padding: 10px;
     color: $color1;
+    padding-top: 90px;
 
     .titulocontacto {
         display: flex;
         justify-content: center;
         font-size: 50px;
-        text-transform: $upper;
-        text-decoration: $subrayado;
+        text-transform: capitalize;
+        text-decoration: $subrayado $color3;
         font-family: cursive;
         animation-duration: 2s;
         animation-name: aparecer;
         animation-delay: 5s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
+        font-family: $font1;
+        font-style: italic;
 
         @keyframes aparecer {
             0% {
@@ -431,7 +479,9 @@ $redes: (
     .formulario {
         place-self: center;
         text-transform: $upper;
-        
+        background-color: $color2;
+        border: 2px solid $color3;
+        padding: 80px;
         input {
             transition: all 2s;
         }
@@ -445,6 +495,45 @@ $redes: (
             text-align: center;
             font-style: italic;
         }
+        .btn--red{
+            margin-right: 40px;
+            margin-bottom: 40px;
+        }
+        .nombre{
+            width: 500px;
+            height: 50px;
+            border: 2px solid aqua;
+        }
+        .btn--yellow{
+            margin-right: 25px;
+            margin-bottom: 40px;
+        }
+        .btn--green{
+            margin-right: 75px;
+            margin-bottom: 40px;
+        }
+        .btn--pink{
+            margin-right: 70px;
+            margin-bottom: 40px;
+        }
+        .btn--purple{
+            margin-right: 10px;
+            margin-bottom: 40px;
+        }
+        .btn--blue{
+            margin-bottom: 40px;
+        }
+        .comens{
+            margin-left: 160px;
+        }
+        .botonformulario{
+            margin-left: 280px;
+            background-color: aqua;
+            height: 50px;
+            width: 80px;
+            font-size: 20px;
+            text-transform: $upper;
+        }
     }
     .map{
         display: grid;
@@ -453,14 +542,17 @@ $redes: (
         .titulomapa {
             display: flex;
             justify-content: center;
-            font-size: 30px;
-            text-transform: $upper;
-            text-decoration: $subrayado;
+            font-size: 50px;
+            text-transform: capitalize;
+            text-decoration: $subrayado $color3;
             animation-duration: 2s;
             animation-name: aparecer;
             animation-delay: 5s;
             animation-direction: alternate;
             animation-iteration-count: infinite;
+            margin-bottom: 20px;
+            font-family: $font1;
+            font-style: italic;
         }
         
         .mapa {
@@ -468,6 +560,7 @@ $redes: (
             place-self: center;
             height: 280px;
             width: 380px;
+            margin-bottom: 20px;
         }
         
         .mapa:hover {
