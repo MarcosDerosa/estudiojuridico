@@ -51,42 +51,32 @@
     <main class="maincontacto">
         <h2 class="titulocontacto">contacto</h2>
         <section class="container-fluid">
-            <div class="row">
+            <div class="row justify-content-center">
+                <div class="col-6">
                 <form action="enviar.php" method="post" enctype="text/plain"
-                    class="formulario col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <label for="nombre" class="formu ">nombre:</label>
-                        <input type="text" class="nombre" name="nombre" required placeholder="Nombre" id="nombre"><br>
-                    </article>
-                    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <label for="apellido" class="formu">apellido:</label>
-                        <input type="text" class="apellido" name="apellido" required placeholder="apellido"
+                    class="formulario">
+                    <div class="form-group row flex-column flex-md-row">
+                        <label for="nombre" class="formu col-md-4 col-lg-2 col-form-label">nombre:</label>
+                        <input type="text" class="nombre form-control col-md-8 col-lg-10" name="nombre" required placeholder="Nombre" id="nombre"><br>
+                        <label for="apellido" class="formu col-md-4  col-lg-2 col-form-label">apellido:</label>
+                        <input type="text" class="apellido form-control col-md-8 col-lg-10" name="apellido" required placeholder="apellido"
                             id="apellido"><br>
-                    </article>
-                    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <label for="edad" class="formu">edad:</label>
-                        <input type="number" class="edad" name="edad" required placeholder="edad" id="edad"><br>
-                    </article>
-                    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <label for="email" class="formu">email:</label>
-                        <input type="email" class="mail" name="email" id="email" required
+                        <label for="edad" class="formu col-md-4 col-lg-2 col-form-label">edad:</label>
+                        <input type="number" class="edad form-control col-md-8 col-lg-10" name="edad" required placeholder="edad" id="edad"><br>
+                        <label for="email" class="formu col-md-4 col-lg-2 col-form-label">email:</label>
+                        <input type="email" class="mail form-control col-md-8 col-lg-10" name="email" id="email" required
                             placeholder="coloque su mail"><br>
-                    </article>
-                    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <label for="tel" class="formu">telefono:</label>
-                        <input type="tel" class="telefono" name="telefono" required placeholder="escribe tu telefono"
+                        <label for="tel" class="formu col-md-4 col-lg-2 col-form-label">telefono:</label>
+                        <input type="tel" class="telefono form-control col-md-8 col-lg-10" name="telefono" required placeholder="escribe tu telefono"
                             id="tel"><br>
-                    </article>
-                    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <label for="file" class="formu">adjuntar archivos:</label>
-                        <input type="file" name="file" id="file"><br>
-                    </article>
-                    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <label for="comentarios" class="formu">comentarios:</label><br>
-                        <textarea name="comentarios" class="comens col-xs-4 col-sm-4 col-md-4 col-lg-4" required
+                        <label for="file" class="formu col-md-4 col-lg-2">adjuntar archivos:</label>
+                        <input type="file" class="form-control col-md-8 col-lg-10" name="file" id="file"><br>
+                        <label for="comentarios" class="formu col-2 col-form-label">comentarios:</label><br>
+                        <textarea name="comentarios" class="comens form-control col-8 mx-5" required
                             placeholder="escriba su comentario" id="comentarios" cols="40" rows="20"></textarea><br>
-                        <input type="submit" class="botonformulario" value="enviar">
-                    </article>
+                        <button class="btn btn-danger offset-sm-4  offset-lg-6">enviar</button>
+                    </div>
+                    </div>
                 </form>
                 <article class="map col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                     <h3 class="titulomapa">Encontranos en esta ubicacion</h3>
