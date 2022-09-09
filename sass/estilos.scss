@@ -24,7 +24,7 @@ $subrayado: underline;
 header {
     background-color: $color0;
     border: 2px solid $color1;
-    position: fixed;
+    position: sticky;
     z-index: 1;
 
     .navbar-dark .nav-link {
@@ -33,7 +33,7 @@ header {
 }
 
 .mainnosotros {
-    padding-top: 90px;
+    padding-top: 30px;
     .titulo22 {
         display: flex;
         justify-content: center;
@@ -58,7 +58,7 @@ header {
         color: $color1;
         text-decoration: $subrayado $color3;
         font-size: 50px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         text-transform: capitalize;
         font-style: italic;
         font-family: $font1;
@@ -70,11 +70,6 @@ header {
         color: $color1;
         padding: 20px;
         margin-bottom: 20px;
-    }
-
-    :hover {
-        transform: scale(1);
-        border-radius: 20px;
     }
 
     .nombres {
@@ -92,7 +87,6 @@ header {
     }
 .nosfooter {
     background-color: $color0;
-    border: 2px solid $color1;
     color: $color1;
     padding-top: 10px;
 
@@ -139,10 +133,6 @@ header {
     .siguenos {
         text-transform: $upper;
         font-family: $font;
-    }
-
-    .derechonoso {
-        background-color: $color4;
     }
 
     .espacios {
@@ -210,7 +200,7 @@ main {
     background-image: url(../assets/fondopagina.jpg);
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 90px;
+    padding-top: 30px;
     .tituloindex {
         display: flex;
         justify-content: center;
@@ -240,16 +230,6 @@ main {
         }
     }
 
-    :hover {
-        transform: scale(1);
-        border-radius: 20px;
-    }
-
-    .btn-primary:hover {
-        background-color: rgb(233, 150, 72);
-        color: rgb(70, 220, 247);
-    }
-
     img {
         height: 180px;
         width: 290px;
@@ -272,6 +252,7 @@ main {
         text-decoration: $subrayado $color3;
         font-family: $font1;
         font-style: italic;
+        padding-bottom: 20px;
 
     }
     .articulo1servi {
@@ -283,10 +264,6 @@ main {
 
     }
 
-    .articulo1servi:hover {
-        transform: scale(1.1);
-    }
-
     .articulo2servi {
         background-color: $color2;
         border: 2px solid $color3;
@@ -294,19 +271,11 @@ main {
         margin-bottom: 20px;
     }
 
-    .articulo2servi:hover {
-        transform: scale(1.1);
-    }
-
     .articulo3servi {
         background-color: $color2;
         border: 2px solid $color3;
         transition-duration: 2s;
         margin-bottom: 20px;
-    }
-
-    .articulo3servi:hover {
-        transform: scale(1.1);
     }
 
     .titulo2servi{
@@ -360,7 +329,7 @@ main {
     background-attachment: fixed;
     padding: 10px;
     color: $color1;
-    padding-top: 90px;
+    padding-top: 30px;
 
     .clien0 {
         .tituloclientes {
@@ -421,35 +390,17 @@ main {
 }
 
 /* page contacto */
-$redes: (
-    Times: red,
-    arial: yellow,
-    curisve: green,
-    sans-serif: pink,
-    helvetica: purple,
-    verdana: blue,
-    fantasy: white,
-);
-@each $red, $font in $redes {
-    .btn--#{$font} {
-        background-color: $color2;
-        border: 2px solid $color3;
-        font-family: $red;
-        color: $font;
-        font-size: 25px;
-    }
-}
+
 .maincontacto {
     grid-area: maincontacto;
     background-image: url(../assets/fondopagina.jpg);
     background-size: cover;
     background-attachment: fixed;
-    display: grid;
-    grid-template-columns: 1fr;
+    max-width: 100%;
     gap: 20px;
     padding: 10px;
     color: $color1;
-    padding-top: 90px;
+    padding-top: 30px;
 
     .titulocontacto {
         display: flex;
@@ -465,6 +416,7 @@ $redes: (
         animation-iteration-count: infinite;
         font-family: $font1;
         font-style: italic;
+        padding-bottom: 30px;
 
         @keyframes aparecer {
             0% {
@@ -479,9 +431,6 @@ $redes: (
     .formulario {
         place-self: center;
         text-transform: $upper;
-        background-color: $color2;
-        border: 2px solid $color3;
-        padding: 80px;
         input {
             transition: all 2s;
         }
@@ -495,48 +444,40 @@ $redes: (
             text-align: center;
             font-style: italic;
         }
-        .btn--red{
-            margin-right: 40px;
-            margin-bottom: 40px;
+
+        .formu{
+            font-size: 25px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
         }
         .nombre{
-            width: 500px;
-            height: 50px;
-            border: 2px solid aqua;
+            margin-left: 45px;
+            width: 400px;
+            height: 40px;
         }
-        .btn--yellow{
-            margin-right: 25px;
-            margin-bottom: 40px;
+        .apellido{
+            margin-left: 30px;
+            width: 400px;
+            height: 40px;
         }
-        .btn--green{
-            margin-right: 75px;
-            margin-bottom: 40px;
+        .edad{
+            margin-left: 80px;
+            width: 400px;
+            height: 40px;
         }
-        .btn--pink{
-            margin-right: 70px;
-            margin-bottom: 40px;
+        .mail{
+            margin-left: 75px;
+            width: 400px;
+            height: 40px;
         }
-        .btn--purple{
-            margin-right: 10px;
-            margin-bottom: 40px;
+        .telefono{
+            margin-left: 20px;
+            width: 400px;
+            height: 40px;
         }
-        .btn--blue{
-            margin-bottom: 40px;
-        }
-        .comens{
-            margin-left: 160px;
-        }
-        .botonformulario{
-            margin-left: 280px;
-            background-color: aqua;
-            height: 50px;
-            width: 80px;
-            font-size: 20px;
-            text-transform: $upper;
-        }
+
     }
     .map{
-        display: grid;
         place-self: center;
         
         .titulomapa {
@@ -556,17 +497,12 @@ $redes: (
         }
         
         .mapa {
-            display: grid;
             place-self: center;
             height: 280px;
             width: 380px;
             margin-bottom: 20px;
         }
         
-        .mapa:hover {
-            transform: scale(1.1);
-            transition: all 2s;
-        }
     }
 }
 .espacios4{

@@ -10,7 +10,7 @@
 header {
   background-color: rgb(23, 7, 7);
   border: 2px solid white;
-  position: fixed;
+  position: sticky;
   z-index: 1;
 }
 header .navbar-dark .nav-link {
@@ -18,7 +18,7 @@ header .navbar-dark .nav-link {
 }
 
 .mainnosotros {
-  padding-top: 90px;
+  padding-top: 30px;
 }
 .mainnosotros .titulo22 {
   display: flex;
@@ -42,7 +42,7 @@ header .navbar-dark .nav-link {
   color: white;
   text-decoration: underline rgb(215, 125, 15);
   font-size: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   text-transform: capitalize;
   font-style: italic;
   font-family: "Cormorant SC", serif;
@@ -53,10 +53,6 @@ header .navbar-dark .nav-link {
   color: white;
   padding: 20px;
   margin-bottom: 20px;
-}
-.mainnosotros :hover {
-  transform: scale(1);
-  border-radius: 20px;
 }
 .mainnosotros .nombres {
   text-shadow: 0 0 10px #000;
@@ -70,7 +66,6 @@ header .navbar-dark .nav-link {
 
 .nosfooter {
   background-color: rgb(23, 7, 7);
-  border: 2px solid white;
   color: white;
   padding-top: 10px;
 }
@@ -109,9 +104,6 @@ header .navbar-dark .nav-link {
 .nosfooter .siguenos {
   text-transform: uppercase;
   font-family: "Times New Roman", Times, serif;
-}
-.nosfooter .derechonoso {
-  background-color: blue;
 }
 .nosfooter .espacios, .nosfooter .espacios4, .nosfooter .espacios3, .nosfooter .espacios2, .nosfooter .espacios1 {
   letter-spacing: 20px;
@@ -167,7 +159,7 @@ main {
   background-image: url(../assets/fondopagina.jpg);
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 90px;
+  padding-top: 30px;
 }
 main .tituloindex {
   display: flex;
@@ -195,14 +187,6 @@ main .art1 .textoindex {
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
 }
-main :hover {
-  transform: scale(1);
-  border-radius: 20px;
-}
-main .btn-primary:hover {
-  background-color: rgb(233, 150, 72);
-  color: rgb(70, 220, 247);
-}
 main img {
   height: 180px;
   width: 290px;
@@ -220,6 +204,7 @@ main img {
   text-decoration: underline rgb(215, 125, 15);
   font-family: "Cormorant SC", serif;
   font-style: italic;
+  padding-bottom: 20px;
 }
 .mainservi .articulo1servi {
   background-color: rgba(33, 5, 5, 0.89);
@@ -228,26 +213,17 @@ main img {
   margin-bottom: 20px;
   margin-top: 10px;
 }
-.mainservi .articulo1servi:hover {
-  transform: scale(1.1);
-}
 .mainservi .articulo2servi {
   background-color: rgba(33, 5, 5, 0.89);
   border: 2px solid rgb(215, 125, 15);
   transition-duration: 2s;
   margin-bottom: 20px;
 }
-.mainservi .articulo2servi:hover {
-  transform: scale(1.1);
-}
 .mainservi .articulo3servi {
   background-color: rgba(33, 5, 5, 0.89);
   border: 2px solid rgb(215, 125, 15);
   transition-duration: 2s;
   margin-bottom: 20px;
-}
-.mainservi .articulo3servi:hover {
-  transform: scale(1.1);
 }
 .mainservi .titulo2servi {
   padding-top: 20px;
@@ -289,7 +265,7 @@ main img {
   background-attachment: fixed;
   padding: 10px;
   color: white;
-  padding-top: 90px;
+  padding-top: 30px;
 }
 .mainclientes .clien0 .tituloclientes {
   font-size: 50px;
@@ -338,73 +314,16 @@ main img {
 }
 
 /* page contacto */
-.btn--red {
-  background-color: rgba(33, 5, 5, 0.89);
-  border: 2px solid rgb(215, 125, 15);
-  font-family: Times;
-  color: red;
-  font-size: 25px;
-}
-
-.btn--yellow {
-  background-color: rgba(33, 5, 5, 0.89);
-  border: 2px solid rgb(215, 125, 15);
-  font-family: arial;
-  color: yellow;
-  font-size: 25px;
-}
-
-.btn--green {
-  background-color: rgba(33, 5, 5, 0.89);
-  border: 2px solid rgb(215, 125, 15);
-  font-family: curisve;
-  color: green;
-  font-size: 25px;
-}
-
-.btn--pink {
-  background-color: rgba(33, 5, 5, 0.89);
-  border: 2px solid rgb(215, 125, 15);
-  font-family: sans-serif;
-  color: pink;
-  font-size: 25px;
-}
-
-.btn--purple {
-  background-color: rgba(33, 5, 5, 0.89);
-  border: 2px solid rgb(215, 125, 15);
-  font-family: helvetica;
-  color: purple;
-  font-size: 25px;
-}
-
-.btn--blue {
-  background-color: rgba(33, 5, 5, 0.89);
-  border: 2px solid rgb(215, 125, 15);
-  font-family: verdana;
-  color: blue;
-  font-size: 25px;
-}
-
-.btn--white {
-  background-color: rgba(33, 5, 5, 0.89);
-  border: 2px solid rgb(215, 125, 15);
-  font-family: fantasy;
-  color: white;
-  font-size: 25px;
-}
-
 .maincontacto {
   grid-area: maincontacto;
   background-image: url(../assets/fondopagina.jpg);
   background-size: cover;
   background-attachment: fixed;
-  display: grid;
-  grid-template-columns: 1fr;
+  max-width: 100%;
   gap: 20px;
   padding: 10px;
   color: white;
-  padding-top: 90px;
+  padding-top: 30px;
 }
 .maincontacto .titulocontacto {
   display: flex;
@@ -420,6 +339,7 @@ main img {
   animation-iteration-count: infinite;
   font-family: "Cormorant SC", serif;
   font-style: italic;
+  padding-bottom: 30px;
 }
 @keyframes aparecer {
   0% {
@@ -432,9 +352,6 @@ main img {
 .maincontacto .formulario {
   place-self: center;
   text-transform: uppercase;
-  background-color: rgba(33, 5, 5, 0.89);
-  border: 2px solid rgb(215, 125, 15);
-  padding: 80px;
 }
 .maincontacto .formulario input {
   transition: all 2s;
@@ -449,47 +366,37 @@ main img {
   text-align: center;
   font-style: italic;
 }
-.maincontacto .formulario .btn--red {
-  margin-right: 40px;
-  margin-bottom: 40px;
+.maincontacto .formulario .formu {
+  font-size: 25px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
 }
 .maincontacto .formulario .nombre {
-  width: 500px;
-  height: 50px;
-  border: 2px solid aqua;
+  margin-left: 45px;
+  width: 400px;
+  height: 40px;
 }
-.maincontacto .formulario .btn--yellow {
-  margin-right: 25px;
-  margin-bottom: 40px;
+.maincontacto .formulario .apellido {
+  margin-left: 30px;
+  width: 400px;
+  height: 40px;
 }
-.maincontacto .formulario .btn--green {
-  margin-right: 75px;
-  margin-bottom: 40px;
+.maincontacto .formulario .edad {
+  margin-left: 80px;
+  width: 400px;
+  height: 40px;
 }
-.maincontacto .formulario .btn--pink {
-  margin-right: 70px;
-  margin-bottom: 40px;
+.maincontacto .formulario .mail {
+  margin-left: 75px;
+  width: 400px;
+  height: 40px;
 }
-.maincontacto .formulario .btn--purple {
-  margin-right: 10px;
-  margin-bottom: 40px;
-}
-.maincontacto .formulario .btn--blue {
-  margin-bottom: 40px;
-}
-.maincontacto .formulario .comens {
-  margin-left: 160px;
-}
-.maincontacto .formulario .botonformulario {
-  margin-left: 280px;
-  background-color: aqua;
-  height: 50px;
-  width: 80px;
-  font-size: 20px;
-  text-transform: uppercase;
+.maincontacto .formulario .telefono {
+  margin-left: 20px;
+  width: 400px;
+  height: 40px;
 }
 .maincontacto .map {
-  display: grid;
   place-self: center;
 }
 .maincontacto .map .titulomapa {
@@ -508,15 +415,10 @@ main img {
   font-style: italic;
 }
 .maincontacto .map .mapa {
-  display: grid;
   place-self: center;
   height: 280px;
   width: 380px;
   margin-bottom: 20px;
-}
-.maincontacto .map .mapa:hover {
-  transform: scale(1.1);
-  transition: all 2s;
 }
 
 /*# sourceMappingURL=nosotros.css.map */
