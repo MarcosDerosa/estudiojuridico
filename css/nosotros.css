@@ -30,11 +30,16 @@ header .navbar-dark .nav-link {
   text-transform: capitalize;
   font-family: "Cormorant SC", serif;
   font-style: italic;
+  text-align: center;
 }
 .mainnosotros .nosotrostexto {
   color: white;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+}
+.mainnosotros .nuestroequipo {
+  text-align: center;
 }
 .mainnosotros .nuestroequipo {
   display: flex;
@@ -171,6 +176,7 @@ main .tituloindex {
   text-transform: capitalize;
   font-family: "Cormorant SC", serif;
   font-style: italic;
+  text-align: center;
 }
 main .art1 {
   background-color: rgba(33, 5, 5, 0.89);
@@ -205,6 +211,7 @@ main img {
   font-family: "Cormorant SC", serif;
   font-style: italic;
   padding-bottom: 20px;
+  text-align: center;
 }
 .mainservi .articulo1servi {
   background-color: rgba(33, 5, 5, 0.89);
@@ -233,6 +240,8 @@ main img {
 .mainservi .parrafoservi {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 .mainservi .carousel-inner {
   margin-top: 20px;
@@ -276,6 +285,9 @@ main img {
 }
 .mainclientes .clien0 .parrafocliente {
   padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
 }
 .mainclientes .nombrecliente {
   padding: 10px;
@@ -309,8 +321,12 @@ main img {
   font-size: 20px;
 }
 .mainclientes .parra2 {
-  padding-top: 60px;
+  padding-top: 50px;
   font-size: 20px;
+}
+.mainclientes .parrafosecundario {
+  font-size: 20px;
+  padding-top: 10px;
 }
 
 /* page contacto */
@@ -320,8 +336,6 @@ main img {
   background-size: cover;
   background-attachment: fixed;
   max-width: 100%;
-  gap: 20px;
-  padding: 10px;
   color: white;
   padding-top: 30px;
 }
@@ -374,6 +388,9 @@ main img {
 .maincontacto .formulario .comens {
   height: 180px;
 }
+.maincontacto .formulario .btn {
+  width: 100px;
+}
 .maincontacto .map {
   place-self: center;
 }
@@ -395,7 +412,7 @@ main img {
 .maincontacto .map .mapa {
   place-self: center;
   height: 280px;
-  width: 380px;
+  width: 320px;
   margin-bottom: 20px;
 }
 

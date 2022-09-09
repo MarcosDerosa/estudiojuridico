@@ -19,71 +19,74 @@
 
 <body>
     <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="../index.html"><img src="../assets/martillo-justicia-removebg-preview.png"
-                    alt="martillo"></a>
-            <a class="tituloestudio navbar-brand" href="../index.html">Estudio Juridico De Rosa</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="row flex-column flex-row">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/martillo-justicia-removebg-preview.png"
+                        alt="martillo"></a>
+                <a class="tituloestudio navbar-brand" href="../index.html">Estudio Juridico De Rosa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/clientes.html">Clientes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/clientes.html">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main class="maincontacto">
         <h2 class="titulocontacto">contacto</h2>
         <section class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-6">
-                <form action="enviar.php" method="post" enctype="text/plain"
-                    class="formulario">
-                    <div class="form-group row flex-column flex-md-row">
-                        <label for="nombre" class="formu col-md-4 col-lg-2 col-form-label">nombre:</label>
-                        <input type="text" class="nombre form-control col-md-8 col-lg-10" name="nombre" required placeholder="Nombre" id="nombre"><br>
-                        <label for="apellido" class="formu col-md-4  col-lg-2 col-form-label">apellido:</label>
-                        <input type="text" class="apellido form-control col-md-8 col-lg-10" name="apellido" required placeholder="apellido"
-                            id="apellido"><br>
-                        <label for="edad" class="formu col-md-4 col-lg-2 col-form-label">edad:</label>
-                        <input type="number" class="edad form-control col-md-8 col-lg-10" name="edad" required placeholder="edad" id="edad"><br>
-                        <label for="email" class="formu col-md-4 col-lg-2 col-form-label">email:</label>
-                        <input type="email" class="mail form-control col-md-8 col-lg-10" name="email" id="email" required
-                            placeholder="coloque su mail"><br>
-                        <label for="tel" class="formu col-md-4 col-lg-2 col-form-label">telefono:</label>
-                        <input type="tel" class="telefono form-control col-md-8 col-lg-10" name="telefono" required placeholder="escribe tu telefono"
-                            id="tel"><br>
-                        <label for="file" class="formu col-md-4 col-lg-2">adjuntar archivos:</label>
-                        <input type="file" class="form-control col-md-8 col-lg-10" name="file" id="file"><br>
-                        <label for="comentarios" class="formu col-2 col-form-label">comentarios:</label><br>
-                        <textarea name="comentarios" class="comens form-control col-8 mx-5" required
-                            placeholder="escriba su comentario" id="comentarios" cols="40" rows="20"></textarea><br>
-                        <button class="btn btn-danger offset-sm-4  offset-lg-6">enviar</button>
-                    </div>
-                    </div>
+                    <form action="enviar.php" method="post" enctype="text/plain" class="formulario">
+                        <div class="form-group row flex-column">
+                            <label for="nombre" class="formu col-md-4 col-lg-2 col-form-label">nombre:</label>
+                            <input type="text" class="nombre form-control col-md-8 col-lg-10" name="nombre" required
+                                placeholder="Nombre" id="nombre"><br>
+                            <label for="apellido" class="formu col-md-4  col-lg-2 col-form-label">apellido:</label>
+                            <input type="text" class="apellido form-control col-md-8 col-lg-10" name="apellido" required
+                                placeholder="apellido" id="apellido"><br>
+                            <label for="edad" class="formu col-md-4 col-lg-2 col-form-label">edad:</label>
+                            <input type="number" class="edad form-control col-md-8 col-lg-10" name="edad" required
+                                placeholder="edad" id="edad"><br>
+                            <label for="email" class="formu col-md-4 col-lg-2 col-form-label">email:</label>
+                            <input type="email" class="mail form-control col-md-8 col-lg-10" name="email" id="email"
+                                required placeholder="coloque su mail"><br>
+                            <label for="tel" class="formu col-md-4 col-lg-2 col-form-label">telefono:</label>
+                            <input type="tel" class="telefono form-control col-md-8 col-lg-10" name="telefono" required
+                                placeholder="escribe tu telefono" id="tel"><br>
+                            <label for="file" class="formu col-md-4 col-lg-2">adjuntar archivos:</label>
+                            <input type="file" class="form-control col-md-8 col-lg-10" name="file" id="file"><br>
+                            <label for="comentarios" class="formu col-2 col-form-label">comentarios:</label><br>
+                            <textarea name="comentarios" class="comens form-control col-8 mx-5" required
+                                placeholder="escriba su comentario" id="comentarios" cols="40" rows="20"></textarea><br>
+                            <button class="btn btn-danger offset-sm-4 offset-md-4 offset-lg-4">enviar</button>
+                        </div>
+                </div>
                 </form>
-                <article class="map col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <article class="map col-sm-12 col-md-12 col-lg-12 text-center">
                     <h3 class="titulomapa">Encontranos en esta ubicacion</h3>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.1562399038044!2d-58.38922938518989!3d-34.75165687284686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2b9b3a0d685%3A0x6aad971f771d73eb!2sLugano%2C%20Banfield%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1658001352569!5m2!1ses-419!2sar"
                         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                        class="mapa col-xs-4 col-sm-4 col-md-4 col-lg-4"></iframe>
+                        class="mapa"></iframe>
                 </article>
             </div>
         </section>
